@@ -1,0 +1,4 @@
+# Vendored upstream: JetBrains compose-multiplatform-core
+# Pinned revision for API shape comparison
+# Repository: https://github.com/JetBrains/compose-multiplatform-core
+fea4bd0d2fa641c9084cce7cfcb9d4661c136ee2

@@ -1,0 +1,49 @@
+# Sweet Compose — API shape allowlist
+# Packages and symbols that Sweet claims to mirror from JetBrains Compose.
+# Scopes the future BCV signature diff (WS-3 A2); the upstream pin is verified by :sweet:verifyUpstreamPin.
+#
+# Format: one package per line. Lines starting with # are comments.
+# Blank lines are ignored. Wildcards not supported — list exact packages.
+#
+# When adding a new mirrored package, add it here so the shape guard covers it.
+# When intentionally diverging from MPP in a package, remove it from this list.
+
+# --- Compose runtime (foundation of the bridge) ---
+androidx.compose.runtime
+
+# --- UI layer ---
+androidx.compose.ui.geometry
+androidx.compose.ui.graphics
+androidx.compose.ui.graphics.drawscope
+androidx.compose.ui.graphics.vector
+androidx.compose.ui.layout
+androidx.compose.ui.text
+androidx.compose.ui.text.font
+androidx.compose.ui.text.style
+androidx.compose.ui.unit
+androidx.compose.ui.util
+androidx.compose.ui.draw
+androidx.compose.ui.res
+androidx.compose.ui.semantics
+androidx.compose.ui.input
+androidx.compose.ui.input.key
+androidx.compose.ui.integration
+androidx.compose.ui.window
+
+# --- Foundation layer ---
+androidx.compose.foundation
+androidx.compose.foundation.layout
+androidx.compose.foundation.layout.internal
+androidx.compose.foundation.lazy
+androidx.compose.foundation.gestures
+androidx.compose.foundation.interaction
+androidx.compose.foundation.shape
+
+# --- Material layer ---
+androidx.compose.material3
+androidx.compose.material
+androidx.compose.material.icons
+
+# --- Animation layer ---
+androidx.compose.animation
+androidx.compose.animation.core

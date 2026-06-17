@@ -1,16 +1,11 @@
-import org.jetbrains.kotlin.gradle.plugin.PLUGIN_CLASSPATH_CONFIGURATION_NAME
-
 plugins {
     id("kotlin")
-    id("com.vanniktech.maven.publish")
 }
 
 dependencies {
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.10.2")
     implementation("org.eclipse.platform:org.eclipse.swt.gtk.linux.x86_64:3.108.0")
-
     testImplementation("org.junit.jupiter:junit-jupiter:5.8.2")
-
 }
 
 tasks.test {

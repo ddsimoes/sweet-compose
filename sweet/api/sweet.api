@@ -1,0 +1,635 @@
+public abstract interface annotation class io/github/ddsimoes/sweet/ComposeSWTTarget : java/lang/annotation/Annotation {
+}
+
+public final class io/github/ddsimoes/sweet/compose/ApplicationComposition {
+	public static final field $stable I
+	public fun <init> (Lio/github/ddsimoes/sweet/compose/ComposeManager;Landroidx/compose/runtime/Recomposer;)V
+	public final fun dispose ()V
+	public final fun isDisposed ()Z
+	public final fun setContent (Lkotlin/jvm/functions/Function2;)V
+}
+
+public final class io/github/ddsimoes/sweet/compose/ComposeManager {
+	public static final field $stable I
+	public static final field Companion Lio/github/ddsimoes/sweet/compose/ComposeManager$Companion;
+	public synthetic fun <init> (Lorg/eclipse/swt/widgets/Display;Lkotlin/jvm/internal/DefaultConstructorMarker;)V
+	public final fun createApplicationComposition ()Lio/github/ddsimoes/sweet/compose/ApplicationComposition;
+	public final fun createScope (Lorg/eclipse/swt/widgets/Composite;)Lio/github/ddsimoes/sweet/compose/ComposeScope;
+	public final fun dispose ()V
+	public final fun getRecomposer ()Landroidx/compose/runtime/Recomposer;
+	public final fun isDisposed ()Z
+	public final fun removeScope (Lorg/eclipse/swt/widgets/Composite;)V
+}
+
+public final class io/github/ddsimoes/sweet/compose/ComposeManager$Companion {
+	public final fun getOrCreate (Lorg/eclipse/swt/widgets/Display;)Lio/github/ddsimoes/sweet/compose/ComposeManager;
+}
+
+public final class io/github/ddsimoes/sweet/compose/ComposeScope {
+	public static final field $stable I
+	public static final field COMPOSE_SCOPE_KEY Ljava/lang/String;
+	public static final field Companion Lio/github/ddsimoes/sweet/compose/ComposeScope$Companion;
+	public fun <init> (Lorg/eclipse/swt/widgets/Composite;Lio/github/ddsimoes/sweet/compose/ComposeManager;Landroidx/compose/runtime/Recomposer;)V
+	public final fun dispose ()V
+	public final fun getManager ()Lio/github/ddsimoes/sweet/compose/ComposeManager;
+	public final fun getRootComposite ()Lorg/eclipse/swt/widgets/Composite;
+	public final fun isDisposed ()Z
+	public final fun setContent (Lkotlin/jvm/functions/Function2;)V
+}
+
+public final class io/github/ddsimoes/sweet/compose/ComposeScope$Companion {
+	public final fun getForComposite (Lorg/eclipse/swt/widgets/Composite;)Lio/github/ddsimoes/sweet/compose/ComposeScope;
+	public final fun getOrCreateForComposite (Lorg/eclipse/swt/widgets/Composite;)Lio/github/ddsimoes/sweet/compose/ComposeScope;
+}
+
+public final class io/github/ddsimoes/sweet/compose/integration/IntegrationKt {
+	public static final fun SWTWidget (Landroidx/compose/ui/Modifier;Lkotlin/jvm/functions/Function1;Landroidx/compose/runtime/Composer;II)V
+	public static final fun embedCompose (Lorg/eclipse/swt/widgets/Composite;Lkotlin/jvm/functions/Function2;)V
+	public static final fun getComposeScope (Lorg/eclipse/swt/widgets/Composite;)Lio/github/ddsimoes/sweet/compose/ComposeScope;
+}
+
+public abstract interface class io/github/ddsimoes/sweet/compose/locals/ApplicationScope {
+	public abstract fun exitApplication ()V
+	public abstract fun getDisplay ()Lorg/eclipse/swt/widgets/Display;
+	public abstract fun getManager ()Lio/github/ddsimoes/sweet/compose/ComposeManager;
+}
+
+public final class io/github/ddsimoes/sweet/compose/locals/ApplicationScopeImpl : io/github/ddsimoes/sweet/compose/locals/ApplicationScope {
+	public static final field $stable I
+	public fun <init> (Lorg/eclipse/swt/widgets/Display;Lio/github/ddsimoes/sweet/compose/ComposeManager;)V
+	public fun exitApplication ()V
+	public fun getDisplay ()Lorg/eclipse/swt/widgets/Display;
+	public fun getManager ()Lio/github/ddsimoes/sweet/compose/ComposeManager;
+}
+
+public final class io/github/ddsimoes/sweet/compose/locals/CompositionLocalsKt {
+	public static final fun getLocalApplicationScope ()Landroidx/compose/runtime/ProvidableCompositionLocal;
+	public static final fun getLocalComposeManager ()Landroidx/compose/runtime/ProvidableCompositionLocal;
+	public static final fun getLocalComposeScope ()Landroidx/compose/runtime/ProvidableCompositionLocal;
+	public static final fun getLocalDisplay ()Landroidx/compose/runtime/ProvidableCompositionLocal;
+	public static final fun getLocalSWTComposite ()Landroidx/compose/runtime/ProvidableCompositionLocal;
+	public static final fun getLocalWindowScope ()Landroidx/compose/runtime/ProvidableCompositionLocal;
+}
+
+public abstract interface class io/github/ddsimoes/sweet/compose/locals/WindowScope {
+	public abstract fun getWindow ()Lorg/eclipse/swt/widgets/Shell;
+}
+
+public final class io/github/ddsimoes/sweet/compose/locals/WindowScopeImpl : io/github/ddsimoes/sweet/compose/locals/WindowScope {
+	public static final field $stable I
+	public fun <init> (Lorg/eclipse/swt/widgets/Shell;)V
+	public fun getWindow ()Lorg/eclipse/swt/widgets/Shell;
+}
+
+public final class io/github/ddsimoes/sweet/data/SweetCompositionData : io/github/ddsimoes/sweet/data/SweetControlData {
+	public static final field $stable I
+	public fun <init> ()V
+	public fun <init> (Lio/github/ddsimoes/sweet/data/SweetLayoutData;Lio/github/ddsimoes/sweet/data/SweetConstraintsData;Lio/github/ddsimoes/sweet/data/SweetSpacingData;Lio/github/ddsimoes/sweet/layout/LayoutSpec;Ljava/lang/Object;)V
+	public synthetic fun <init> (Lio/github/ddsimoes/sweet/data/SweetLayoutData;Lio/github/ddsimoes/sweet/data/SweetConstraintsData;Lio/github/ddsimoes/sweet/data/SweetSpacingData;Lio/github/ddsimoes/sweet/layout/LayoutSpec;Ljava/lang/Object;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+	public final fun component1 ()Lio/github/ddsimoes/sweet/data/SweetLayoutData;
+	public final fun component2 ()Lio/github/ddsimoes/sweet/data/SweetConstraintsData;
+	public final fun component3 ()Lio/github/ddsimoes/sweet/data/SweetSpacingData;
+	public final fun component4 ()Lio/github/ddsimoes/sweet/layout/LayoutSpec;
+	public final fun component5 ()Ljava/lang/Object;
+	public final fun copy (Lio/github/ddsimoes/sweet/data/SweetLayoutData;Lio/github/ddsimoes/sweet/data/SweetConstraintsData;Lio/github/ddsimoes/sweet/data/SweetSpacingData;Lio/github/ddsimoes/sweet/layout/LayoutSpec;Ljava/lang/Object;)Lio/github/ddsimoes/sweet/data/SweetCompositionData;
+	public static synthetic fun copy$default (Lio/github/ddsimoes/sweet/data/SweetCompositionData;Lio/github/ddsimoes/sweet/data/SweetLayoutData;Lio/github/ddsimoes/sweet/data/SweetConstraintsData;Lio/github/ddsimoes/sweet/data/SweetSpacingData;Lio/github/ddsimoes/sweet/layout/LayoutSpec;Ljava/lang/Object;ILjava/lang/Object;)Lio/github/ddsimoes/sweet/data/SweetCompositionData;
+	public fun equals (Ljava/lang/Object;)Z
+	public final fun getConstraintsData ()Lio/github/ddsimoes/sweet/data/SweetConstraintsData;
+	public final fun getLayoutData ()Lio/github/ddsimoes/sweet/data/SweetLayoutData;
+	public final fun getLayoutSpec ()Lio/github/ddsimoes/sweet/layout/LayoutSpec;
+	public final fun getModifierChain ()Ljava/lang/Object;
+	public final fun getSpacingData ()Lio/github/ddsimoes/sweet/data/SweetSpacingData;
+	public fun hashCode ()I
+	public final fun resetModifierDerived ()Lio/github/ddsimoes/sweet/data/SweetCompositionData;
+	public fun toString ()Ljava/lang/String;
+	public final fun withConstraintsData (Lkotlin/jvm/functions/Function1;)Lio/github/ddsimoes/sweet/data/SweetCompositionData;
+	public final fun withLayoutData (Lkotlin/jvm/functions/Function1;)Lio/github/ddsimoes/sweet/data/SweetCompositionData;
+	public final fun withLayoutSpec (Lio/github/ddsimoes/sweet/layout/LayoutSpec;)Lio/github/ddsimoes/sweet/data/SweetCompositionData;
+	public final fun withModifierChain (Ljava/lang/Object;)Lio/github/ddsimoes/sweet/data/SweetCompositionData;
+	public final fun withSpacingData (Lkotlin/jvm/functions/Function1;)Lio/github/ddsimoes/sweet/data/SweetCompositionData;
+}
+
+public final class io/github/ddsimoes/sweet/data/SweetConstraintsData : io/github/ddsimoes/sweet/data/SweetControlData {
+	public static final field $stable I
+	public fun <init> ()V
+	public fun <init> (Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/Float;)V
+	public synthetic fun <init> (Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/Float;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+	public final fun component1 ()Ljava/lang/Integer;
+	public final fun component2 ()Ljava/lang/Integer;
+	public final fun component3 ()Ljava/lang/Integer;
+	public final fun component4 ()Ljava/lang/Integer;
+	public final fun component5 ()Ljava/lang/Float;
+	public final fun copy (Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/Float;)Lio/github/ddsimoes/sweet/data/SweetConstraintsData;
+	public static synthetic fun copy$default (Lio/github/ddsimoes/sweet/data/SweetConstraintsData;Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/Float;ILjava/lang/Object;)Lio/github/ddsimoes/sweet/data/SweetConstraintsData;
+	public fun equals (Ljava/lang/Object;)Z
+	public final fun getAspectRatio ()Ljava/lang/Float;
+	public final fun getMaxHeight ()Ljava/lang/Integer;
+	public final fun getMaxWidth ()Ljava/lang/Integer;
+	public final fun getMinHeight ()Ljava/lang/Integer;
+	public final fun getMinWidth ()Ljava/lang/Integer;
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public abstract class io/github/ddsimoes/sweet/data/SweetControlData {
+	public static final field $stable I
+}
+
+public final class io/github/ddsimoes/sweet/data/SweetControlDataKt {
+	public static final fun getAlignment (Lorg/eclipse/swt/widgets/Control;)Landroidx/compose/ui/Alignment;
+	public static final fun getAspectRatio (Lorg/eclipse/swt/widgets/Control;)Ljava/lang/Float;
+	public static final fun getFillMaxHeight (Lorg/eclipse/swt/widgets/Control;)Z
+	public static final fun getFillMaxWidth (Lorg/eclipse/swt/widgets/Control;)Z
+	public static final fun getMatchParentSize (Lorg/eclipse/swt/widgets/Control;)Z
+	public static final fun getMaxHeight (Lorg/eclipse/swt/widgets/Control;)Ljava/lang/Integer;
+	public static final fun getMaxWidth (Lorg/eclipse/swt/widgets/Control;)Ljava/lang/Integer;
+	public static final fun getMinHeight (Lorg/eclipse/swt/widgets/Control;)Ljava/lang/Integer;
+	public static final fun getMinWidth (Lorg/eclipse/swt/widgets/Control;)Ljava/lang/Integer;
+	public static final fun getOffsetX (Lorg/eclipse/swt/widgets/Control;)I
+	public static final fun getOffsetY (Lorg/eclipse/swt/widgets/Control;)I
+	public static final fun getPaddingBottom (Lorg/eclipse/swt/widgets/Control;)I
+	public static final fun getPaddingEnd (Lorg/eclipse/swt/widgets/Control;)I
+	public static final fun getPaddingStart (Lorg/eclipse/swt/widgets/Control;)I
+	public static final fun getPaddingTop (Lorg/eclipse/swt/widgets/Control;)I
+	public static final fun getSizeHeight (Lorg/eclipse/swt/widgets/Control;)Ljava/lang/Integer;
+	public static final fun getSizeWidth (Lorg/eclipse/swt/widgets/Control;)Ljava/lang/Integer;
+	public static final fun getSweetCompositionData (Lorg/eclipse/swt/widgets/Control;)Lio/github/ddsimoes/sweet/data/SweetCompositionData;
+	public static final fun getSweetConstraintsData (Lorg/eclipse/swt/widgets/Control;)Lio/github/ddsimoes/sweet/data/SweetConstraintsData;
+	public static final fun getSweetData (Lorg/eclipse/swt/widgets/Control;)Lio/github/ddsimoes/sweet/data/SweetControlData;
+	public static final fun getSweetData (Lorg/eclipse/swt/widgets/Widget;)Lio/github/ddsimoes/sweet/data/SweetControlData;
+	public static final fun getSweetLayoutData (Lorg/eclipse/swt/widgets/Control;)Lio/github/ddsimoes/sweet/data/SweetLayoutData;
+	public static final fun getSweetLayoutSpec (Lorg/eclipse/swt/widgets/Control;)Lio/github/ddsimoes/sweet/layout/LayoutSpec;
+	public static final fun getSweetSpacingData (Lorg/eclipse/swt/widgets/Control;)Lio/github/ddsimoes/sweet/data/SweetSpacingData;
+	public static final fun getWeight (Lorg/eclipse/swt/widgets/Control;)Ljava/lang/Float;
+	public static final fun isRow (Lorg/eclipse/swt/widgets/Control;)Z
+	public static final fun setSweetData (Lorg/eclipse/swt/widgets/Control;Lio/github/ddsimoes/sweet/data/SweetControlData;)V
+	public static final fun setSweetData (Lorg/eclipse/swt/widgets/Widget;Lio/github/ddsimoes/sweet/data/SweetControlData;)V
+	public static final fun updateSweetCompositionData (Lorg/eclipse/swt/widgets/Control;Lkotlin/jvm/functions/Function1;)V
+}
+
+public final class io/github/ddsimoes/sweet/data/SweetLayoutData : io/github/ddsimoes/sweet/data/SweetControlData {
+	public static final field $stable I
+	public fun <init> ()V
+	public fun <init> (ZZLjava/lang/Integer;Ljava/lang/Integer;Ljava/lang/Float;ZLandroidx/compose/ui/Alignment;Landroidx/compose/ui/Alignment;Landroidx/compose/ui/Alignment$Horizontal;Landroidx/compose/ui/Alignment$Vertical;Z)V
+	public synthetic fun <init> (ZZLjava/lang/Integer;Ljava/lang/Integer;Ljava/lang/Float;ZLandroidx/compose/ui/Alignment;Landroidx/compose/ui/Alignment;Landroidx/compose/ui/Alignment$Horizontal;Landroidx/compose/ui/Alignment$Vertical;ZILkotlin/jvm/internal/DefaultConstructorMarker;)V
+	public final fun component1 ()Z
+	public final fun component10 ()Landroidx/compose/ui/Alignment$Vertical;
+	public final fun component11 ()Z
+	public final fun component2 ()Z
+	public final fun component3 ()Ljava/lang/Integer;
+	public final fun component4 ()Ljava/lang/Integer;
+	public final fun component5 ()Ljava/lang/Float;
+	public final fun component6 ()Z
+	public final fun component7 ()Landroidx/compose/ui/Alignment;
+	public final fun component8 ()Landroidx/compose/ui/Alignment;
+	public final fun component9 ()Landroidx/compose/ui/Alignment$Horizontal;
+	public final fun copy (ZZLjava/lang/Integer;Ljava/lang/Integer;Ljava/lang/Float;ZLandroidx/compose/ui/Alignment;Landroidx/compose/ui/Alignment;Landroidx/compose/ui/Alignment$Horizontal;Landroidx/compose/ui/Alignment$Vertical;Z)Lio/github/ddsimoes/sweet/data/SweetLayoutData;
+	public static synthetic fun copy$default (Lio/github/ddsimoes/sweet/data/SweetLayoutData;ZZLjava/lang/Integer;Ljava/lang/Integer;Ljava/lang/Float;ZLandroidx/compose/ui/Alignment;Landroidx/compose/ui/Alignment;Landroidx/compose/ui/Alignment$Horizontal;Landroidx/compose/ui/Alignment$Vertical;ZILjava/lang/Object;)Lio/github/ddsimoes/sweet/data/SweetLayoutData;
+	public fun equals (Ljava/lang/Object;)Z
+	public final fun getAlignment ()Landroidx/compose/ui/Alignment;
+	public final fun getBoxAlignment ()Landroidx/compose/ui/Alignment;
+	public final fun getFillMaxHeight ()Z
+	public final fun getFillMaxWidth ()Z
+	public final fun getHorizontalAlignmentOverride ()Landroidx/compose/ui/Alignment$Horizontal;
+	public final fun getMatchParentSize ()Z
+	public final fun getSizeHeight ()Ljava/lang/Integer;
+	public final fun getSizeWidth ()Ljava/lang/Integer;
+	public final fun getVerticalAlignmentOverride ()Landroidx/compose/ui/Alignment$Vertical;
+	public final fun getWeight ()Ljava/lang/Float;
+	public fun hashCode ()I
+	public final fun isRow ()Z
+	public fun toString ()Ljava/lang/String;
+}
+
+public final class io/github/ddsimoes/sweet/data/SweetSpacingData : io/github/ddsimoes/sweet/data/SweetControlData {
+	public static final field $stable I
+	public fun <init> ()V
+	public fun <init> (IIIIII)V
+	public synthetic fun <init> (IIIIIIILkotlin/jvm/internal/DefaultConstructorMarker;)V
+	public final fun component1 ()I
+	public final fun component2 ()I
+	public final fun component3 ()I
+	public final fun component4 ()I
+	public final fun component5 ()I
+	public final fun component6 ()I
+	public final fun copy (IIIIII)Lio/github/ddsimoes/sweet/data/SweetSpacingData;
+	public static synthetic fun copy$default (Lio/github/ddsimoes/sweet/data/SweetSpacingData;IIIIIIILjava/lang/Object;)Lio/github/ddsimoes/sweet/data/SweetSpacingData;
+	public fun equals (Ljava/lang/Object;)Z
+	public final fun getOffsetX ()I
+	public final fun getOffsetY ()I
+	public final fun getPaddingBottom ()I
+	public final fun getPaddingEnd ()I
+	public final fun getPaddingStart ()I
+	public final fun getPaddingTop ()I
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public final class io/github/ddsimoes/sweet/debug/SweetDebugger {
+	public static final field $stable I
+	public static final field INSTANCE Lio/github/ddsimoes/sweet/debug/SweetDebugger;
+	public final fun disable ()V
+	public final fun enable ()V
+	public final fun getAssertionEnabled ()Z
+	public final fun log (Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
+	public static synthetic fun log$default (Lio/github/ddsimoes/sweet/debug/SweetDebugger;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;ILjava/lang/Object;)V
+	public final fun logWidgetTree (Lorg/eclipse/swt/widgets/Composite;)V
+}
+
+public final class io/github/ddsimoes/sweet/debug/SwtDebugger {
+	public static final field $stable I
+	public static final field INSTANCE Lio/github/ddsimoes/sweet/debug/SwtDebugger;
+	public final fun debug (Ljava/lang/String;)V
+	public final fun printTree (Lorg/eclipse/swt/widgets/Control;Ljava/lang/String;)V
+	public static synthetic fun printTree$default (Lio/github/ddsimoes/sweet/debug/SwtDebugger;Lorg/eclipse/swt/widgets/Control;Ljava/lang/String;ILjava/lang/Object;)V
+	public final fun printTreeSummary (Lorg/eclipse/swt/widgets/Control;)V
+	public final fun runSWT (Lkotlin/jvm/functions/Function1;)V
+}
+
+public final class io/github/ddsimoes/sweet/image/ImageBitmapConfig : java/lang/Enum {
+	public static final field Alpha8 Lio/github/ddsimoes/sweet/image/ImageBitmapConfig;
+	public static final field Argb8888 Lio/github/ddsimoes/sweet/image/ImageBitmapConfig;
+	public static final field Rgb565 Lio/github/ddsimoes/sweet/image/ImageBitmapConfig;
+	public static fun getEntries ()Lkotlin/enums/EnumEntries;
+	public static fun valueOf (Ljava/lang/String;)Lio/github/ddsimoes/sweet/image/ImageBitmapConfig;
+	public static fun values ()[Lio/github/ddsimoes/sweet/image/ImageBitmapConfig;
+}
+
+public final class io/github/ddsimoes/sweet/image/ImageBitmapLoader {
+	public static final field $stable I
+	public static final field INSTANCE Lio/github/ddsimoes/sweet/image/ImageBitmapLoader;
+	public final fun clearCache ()V
+	public final fun loadFromBytes ([BLorg/eclipse/swt/widgets/Display;)Landroidx/compose/ui/graphics/ImageBitmap;
+	public final fun loadFromImageData (Ljava/lang/String;Lorg/eclipse/swt/graphics/ImageData;Lorg/eclipse/swt/widgets/Display;Z)Landroidx/compose/ui/graphics/ImageBitmap;
+	public static synthetic fun loadFromImageData$default (Lio/github/ddsimoes/sweet/image/ImageBitmapLoader;Ljava/lang/String;Lorg/eclipse/swt/graphics/ImageData;Lorg/eclipse/swt/widgets/Display;ZILjava/lang/Object;)Landroidx/compose/ui/graphics/ImageBitmap;
+	public final fun loadFromPath (Ljava/lang/String;Lorg/eclipse/swt/widgets/Display;Z)Landroidx/compose/ui/graphics/ImageBitmap;
+	public static synthetic fun loadFromPath$default (Lio/github/ddsimoes/sweet/image/ImageBitmapLoader;Ljava/lang/String;Lorg/eclipse/swt/widgets/Display;ZILjava/lang/Object;)Landroidx/compose/ui/graphics/ImageBitmap;
+	public final fun loadFromStream (Ljava/io/InputStream;Lorg/eclipse/swt/widgets/Display;)Landroidx/compose/ui/graphics/ImageBitmap;
+	public final fun loadImageData (Ljava/lang/String;)Lorg/eclipse/swt/graphics/ImageData;
+}
+
+public final class io/github/ddsimoes/sweet/image/PixelMap {
+	public static final field $stable I
+	public fun <init> (II[BI)V
+	public final fun component1 ()I
+	public final fun component2 ()I
+	public final fun component3 ()[B
+	public final fun component4 ()I
+	public final fun copy (II[BI)Lio/github/ddsimoes/sweet/image/PixelMap;
+	public static synthetic fun copy$default (Lio/github/ddsimoes/sweet/image/PixelMap;II[BIILjava/lang/Object;)Lio/github/ddsimoes/sweet/image/PixelMap;
+	public fun equals (Ljava/lang/Object;)Z
+	public final fun getBuffer ()[B
+	public final fun getHeight ()I
+	public final fun getPixelStride ()I
+	public final fun getWidth ()I
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public final class io/github/ddsimoes/sweet/image/SweetImageBitmapKt {
+	public static final fun fromSwtImage (Landroidx/compose/ui/graphics/ImageBitmap$Companion;Lorg/eclipse/swt/graphics/Image;Lorg/eclipse/swt/widgets/Display;)Landroidx/compose/ui/graphics/ImageBitmap;
+}
+
+public final class io/github/ddsimoes/sweet/internal/ModifierReconcilerKt {
+	public static final fun applySWTModifier (Lorg/eclipse/swt/widgets/Control;Landroidx/compose/ui/Modifier;)V
+}
+
+public final class io/github/ddsimoes/sweet/internal/StepResult {
+	public static final field $stable I
+	public synthetic fun <init> (JJILkotlin/jvm/internal/DefaultConstructorMarker;)V
+	public synthetic fun <init> (JJLkotlin/jvm/internal/DefaultConstructorMarker;)V
+	public final fun component1-NH-jbRc ()J
+	public final fun component2-nOcc-ac ()J
+	public final fun copy-iMp_ygU (JJ)Lio/github/ddsimoes/sweet/internal/StepResult;
+	public static synthetic fun copy-iMp_ygU$default (Lio/github/ddsimoes/sweet/internal/StepResult;JJILjava/lang/Object;)Lio/github/ddsimoes/sweet/internal/StepResult;
+	public fun equals (Ljava/lang/Object;)Z
+	public final fun getContentOffset-nOcc-ac ()J
+	public final fun getOuterSize-NH-jbRc ()J
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public final class io/github/ddsimoes/sweet/internal/UtilitiesKt {
+	public static final fun getDisplayDensity (Lorg/eclipse/swt/widgets/Display;)Landroidx/compose/ui/unit/Density;
+	public static synthetic fun getDisplayDensity$default (Lorg/eclipse/swt/widgets/Display;ILjava/lang/Object;)Landroidx/compose/ui/unit/Density;
+}
+
+public final class io/github/ddsimoes/sweet/internal/WindowConfig {
+	public static final field $stable I
+	public fun <init> ()V
+	public fun <init> (Ljava/lang/String;IIZZZZZLandroidx/compose/ui/graphics/Painter;Ljava/lang/Object;Lkotlin/jvm/functions/Function0;Landroidx/compose/ui/window/WindowState;)V
+	public synthetic fun <init> (Ljava/lang/String;IIZZZZZLandroidx/compose/ui/graphics/Painter;Ljava/lang/Object;Lkotlin/jvm/functions/Function0;Landroidx/compose/ui/window/WindowState;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+	public final fun component1 ()Ljava/lang/String;
+	public final fun component10 ()Ljava/lang/Object;
+	public final fun component11 ()Lkotlin/jvm/functions/Function0;
+	public final fun component12 ()Landroidx/compose/ui/window/WindowState;
+	public final fun component2 ()I
+	public final fun component3 ()I
+	public final fun component4 ()Z
+	public final fun component5 ()Z
+	public final fun component6 ()Z
+	public final fun component7 ()Z
+	public final fun component8 ()Z
+	public final fun component9 ()Landroidx/compose/ui/graphics/Painter;
+	public final fun copy (Ljava/lang/String;IIZZZZZLandroidx/compose/ui/graphics/Painter;Ljava/lang/Object;Lkotlin/jvm/functions/Function0;Landroidx/compose/ui/window/WindowState;)Lio/github/ddsimoes/sweet/internal/WindowConfig;
+	public static synthetic fun copy$default (Lio/github/ddsimoes/sweet/internal/WindowConfig;Ljava/lang/String;IIZZZZZLandroidx/compose/ui/graphics/Painter;Ljava/lang/Object;Lkotlin/jvm/functions/Function0;Landroidx/compose/ui/window/WindowState;ILjava/lang/Object;)Lio/github/ddsimoes/sweet/internal/WindowConfig;
+	public fun equals (Ljava/lang/Object;)Z
+	public final fun getAlwaysOnTop ()Z
+	public final fun getDecoration ()Ljava/lang/Object;
+	public final fun getEnabled ()Z
+	public final fun getFocusable ()Z
+	public final fun getHeight ()I
+	public final fun getIcon ()Landroidx/compose/ui/graphics/Painter;
+	public final fun getOnCloseRequest ()Lkotlin/jvm/functions/Function0;
+	public final fun getResizable ()Z
+	public final fun getTitle ()Ljava/lang/String;
+	public final fun getVisible ()Z
+	public final fun getWidth ()I
+	public final fun getWindowState ()Landroidx/compose/ui/window/WindowState;
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public final class io/github/ddsimoes/sweet/internal/WindowSystemKt {
+	public static final fun runCompose (Lio/github/ddsimoes/sweet/internal/WindowConfig;Lkotlin/jvm/functions/Function2;)V
+	public static synthetic fun runCompose$default (Lio/github/ddsimoes/sweet/internal/WindowConfig;Lkotlin/jvm/functions/Function2;ILjava/lang/Object;)V
+}
+
+public final class io/github/ddsimoes/sweet/layout/Constraints {
+	public static final field $stable I
+	public static final field Companion Lio/github/ddsimoes/sweet/layout/Constraints$Companion;
+	public fun <init> ()V
+	public fun <init> (IIII)V
+	public synthetic fun <init> (IIIIILkotlin/jvm/internal/DefaultConstructorMarker;)V
+	public final fun component1 ()I
+	public final fun component2 ()I
+	public final fun component3 ()I
+	public final fun component4 ()I
+	public final fun constrain (Lorg/eclipse/swt/graphics/Point;)Lorg/eclipse/swt/graphics/Point;
+	public final fun constrainHeight (I)I
+	public final fun constrainWidth (I)I
+	public final fun copy (IIII)Lio/github/ddsimoes/sweet/layout/Constraints;
+	public static synthetic fun copy$default (Lio/github/ddsimoes/sweet/layout/Constraints;IIIIILjava/lang/Object;)Lio/github/ddsimoes/sweet/layout/Constraints;
+	public final fun copyWith (IIII)Lio/github/ddsimoes/sweet/layout/Constraints;
+	public static synthetic fun copyWith$default (Lio/github/ddsimoes/sweet/layout/Constraints;IIIIILjava/lang/Object;)Lio/github/ddsimoes/sweet/layout/Constraints;
+	public fun equals (Ljava/lang/Object;)Z
+	public final fun getHasBoundedHeight ()Z
+	public final fun getHasBoundedWidth ()Z
+	public final fun getHasFixedHeight ()Z
+	public final fun getHasFixedWidth ()Z
+	public final fun getMaxHeight ()I
+	public final fun getMaxWidth ()I
+	public final fun getMinHeight ()I
+	public final fun getMinWidth ()I
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public final class io/github/ddsimoes/sweet/layout/Constraints$Companion {
+	public final fun fixed (II)Lio/github/ddsimoes/sweet/layout/Constraints;
+	public final fun getInfinity ()Lio/github/ddsimoes/sweet/layout/Constraints;
+}
+
+public abstract interface class io/github/ddsimoes/sweet/layout/IntrinsicMeasurable {
+	public abstract fun maxIntrinsicHeight (I)I
+	public abstract fun maxIntrinsicWidth (I)I
+	public abstract fun minIntrinsicHeight (I)I
+	public abstract fun minIntrinsicWidth (I)I
+}
+
+public final class io/github/ddsimoes/sweet/layout/LayoutCoordinator {
+	public static final field $stable I
+	public static final field Companion Lio/github/ddsimoes/sweet/layout/LayoutCoordinator$Companion;
+	public synthetic fun <init> (Lorg/eclipse/swt/widgets/Display;Lkotlin/jvm/internal/DefaultConstructorMarker;)V
+	public final fun assertBalanced ()V
+	public final fun beginFrame ()V
+	public final fun endFrame ()V
+	public final fun isInFrame ()Z
+	public final fun requestLayout (Lorg/eclipse/swt/widgets/Composite;)V
+}
+
+public final class io/github/ddsimoes/sweet/layout/LayoutCoordinator$Companion {
+	public final fun createForTest ()Lio/github/ddsimoes/sweet/layout/LayoutCoordinator;
+	public final fun forDisplay (Lorg/eclipse/swt/widgets/Display;)Lio/github/ddsimoes/sweet/layout/LayoutCoordinator;
+}
+
+public abstract interface class io/github/ddsimoes/sweet/layout/LayoutSpec {
+}
+
+public final class io/github/ddsimoes/sweet/layout/LayoutSpec$Box : io/github/ddsimoes/sweet/layout/LayoutSpec {
+	public static final field $stable I
+	public fun <init> (Landroidx/compose/ui/Alignment;Z)V
+	public synthetic fun <init> (Landroidx/compose/ui/Alignment;ZILkotlin/jvm/internal/DefaultConstructorMarker;)V
+	public final fun component1 ()Landroidx/compose/ui/Alignment;
+	public final fun component2 ()Z
+	public final fun copy (Landroidx/compose/ui/Alignment;Z)Lio/github/ddsimoes/sweet/layout/LayoutSpec$Box;
+	public static synthetic fun copy$default (Lio/github/ddsimoes/sweet/layout/LayoutSpec$Box;Landroidx/compose/ui/Alignment;ZILjava/lang/Object;)Lio/github/ddsimoes/sweet/layout/LayoutSpec$Box;
+	public fun equals (Ljava/lang/Object;)Z
+	public final fun getContentAlignment ()Landroidx/compose/ui/Alignment;
+	public final fun getFillChildren ()Z
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public final class io/github/ddsimoes/sweet/layout/LayoutSpec$Column : io/github/ddsimoes/sweet/layout/LayoutSpec {
+	public static final field $stable I
+	public fun <init> (Landroidx/compose/foundation/layout/Arrangement$Vertical;Landroidx/compose/ui/Alignment$Horizontal;)V
+	public final fun component1 ()Landroidx/compose/foundation/layout/Arrangement$Vertical;
+	public final fun component2 ()Landroidx/compose/ui/Alignment$Horizontal;
+	public final fun copy (Landroidx/compose/foundation/layout/Arrangement$Vertical;Landroidx/compose/ui/Alignment$Horizontal;)Lio/github/ddsimoes/sweet/layout/LayoutSpec$Column;
+	public static synthetic fun copy$default (Lio/github/ddsimoes/sweet/layout/LayoutSpec$Column;Landroidx/compose/foundation/layout/Arrangement$Vertical;Landroidx/compose/ui/Alignment$Horizontal;ILjava/lang/Object;)Lio/github/ddsimoes/sweet/layout/LayoutSpec$Column;
+	public fun equals (Ljava/lang/Object;)Z
+	public final fun getHorizontalAlignment ()Landroidx/compose/ui/Alignment$Horizontal;
+	public final fun getVerticalArrangement ()Landroidx/compose/foundation/layout/Arrangement$Vertical;
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public final class io/github/ddsimoes/sweet/layout/LayoutSpec$Row : io/github/ddsimoes/sweet/layout/LayoutSpec {
+	public static final field $stable I
+	public fun <init> (Landroidx/compose/foundation/layout/Arrangement$Horizontal;Landroidx/compose/ui/Alignment$Vertical;)V
+	public final fun component1 ()Landroidx/compose/foundation/layout/Arrangement$Horizontal;
+	public final fun component2 ()Landroidx/compose/ui/Alignment$Vertical;
+	public final fun copy (Landroidx/compose/foundation/layout/Arrangement$Horizontal;Landroidx/compose/ui/Alignment$Vertical;)Lio/github/ddsimoes/sweet/layout/LayoutSpec$Row;
+	public static synthetic fun copy$default (Lio/github/ddsimoes/sweet/layout/LayoutSpec$Row;Landroidx/compose/foundation/layout/Arrangement$Horizontal;Landroidx/compose/ui/Alignment$Vertical;ILjava/lang/Object;)Lio/github/ddsimoes/sweet/layout/LayoutSpec$Row;
+	public fun equals (Ljava/lang/Object;)Z
+	public final fun getHorizontalArrangement ()Landroidx/compose/foundation/layout/Arrangement$Horizontal;
+	public final fun getVerticalAlignment ()Landroidx/compose/ui/Alignment$Vertical;
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public abstract interface class io/github/ddsimoes/sweet/layout/Measurable : io/github/ddsimoes/sweet/layout/IntrinsicMeasurable {
+	public abstract fun measure (Lio/github/ddsimoes/sweet/layout/Constraints;)Lio/github/ddsimoes/sweet/layout/Size;
+}
+
+public abstract interface class io/github/ddsimoes/sweet/layout/Placeable {
+	public abstract fun getMeasuredSize ()Lio/github/ddsimoes/sweet/layout/Size;
+	public abstract fun place (II)V
+	public abstract fun setMeasuredSize (Lio/github/ddsimoes/sweet/layout/Size;)V
+}
+
+public class io/github/ddsimoes/sweet/layout/SWTControlMeasurable : io/github/ddsimoes/sweet/layout/SweetMeasurable {
+	public static final field $stable I
+	public fun <init> (Lorg/eclipse/swt/widgets/Control;)V
+	public fun getAlignmentSize ()Lio/github/ddsimoes/sweet/layout/Size;
+	public fun getControl ()Lorg/eclipse/swt/widgets/Control;
+	public fun getMeasuredSize ()Lio/github/ddsimoes/sweet/layout/Size;
+	public fun maxIntrinsicHeight (I)I
+	public fun maxIntrinsicWidth (I)I
+	public fun measure (Lio/github/ddsimoes/sweet/layout/Constraints;)Lio/github/ddsimoes/sweet/layout/Size;
+	protected fun measureNaturalContent (Lio/github/ddsimoes/sweet/layout/Constraints;)Lorg/eclipse/swt/graphics/Point;
+	public fun minIntrinsicHeight (I)I
+	public fun minIntrinsicWidth (I)I
+	public fun place (II)V
+	public fun setAlignmentSize (Lio/github/ddsimoes/sweet/layout/Size;)V
+	public fun setMeasuredSize (Lio/github/ddsimoes/sweet/layout/Size;)V
+}
+
+public final class io/github/ddsimoes/sweet/layout/Size {
+	public static final field $stable I
+	public static final field Companion Lio/github/ddsimoes/sweet/layout/Size$Companion;
+	public fun <init> (II)V
+	public final fun component1 ()I
+	public final fun component2 ()I
+	public final fun copy (II)Lio/github/ddsimoes/sweet/layout/Size;
+	public static synthetic fun copy$default (Lio/github/ddsimoes/sweet/layout/Size;IIILjava/lang/Object;)Lio/github/ddsimoes/sweet/layout/Size;
+	public fun equals (Ljava/lang/Object;)Z
+	public final fun getHeight ()I
+	public final fun getWidth ()I
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public final class io/github/ddsimoes/sweet/layout/Size$Companion {
+	public final fun getUnspecified ()Lio/github/ddsimoes/sweet/layout/Size;
+	public final fun getZero ()Lio/github/ddsimoes/sweet/layout/Size;
+}
+
+public final class io/github/ddsimoes/sweet/layout/SweetLayout : org/eclipse/swt/widgets/Layout {
+	public static final field $stable I
+	public static final field Companion Lio/github/ddsimoes/sweet/layout/SweetLayout$Companion;
+	public fun <init> ()V
+	public final fun getCountId ()Ljava/lang/String;
+	public final fun setCountId (Ljava/lang/String;)V
+}
+
+public final class io/github/ddsimoes/sweet/layout/SweetLayout$Companion {
+	public final fun getMeasureCountEnabled ()Z
+	public final fun getMeasureCounts ()Ljava/util/Map;
+	public final fun getMeasurementFont ()Lorg/eclipse/swt/graphics/Font;
+	public final fun resetMeasureCounts ()V
+	public final fun setMeasureCountEnabled (Z)V
+	public final fun setMeasurementFont (Lorg/eclipse/swt/graphics/Font;)V
+}
+
+public abstract interface class io/github/ddsimoes/sweet/layout/SweetMeasurable : io/github/ddsimoes/sweet/layout/Measurable, io/github/ddsimoes/sweet/layout/Placeable {
+	public abstract fun getAlignmentSize ()Lio/github/ddsimoes/sweet/layout/Size;
+	public abstract fun getControl ()Lorg/eclipse/swt/widgets/Control;
+	public abstract fun getMeasuredSize ()Lio/github/ddsimoes/sweet/layout/Size;
+	public abstract fun place (II)V
+	public abstract fun setMeasuredSize (Lio/github/ddsimoes/sweet/layout/Size;)V
+}
+
+public final class io/github/ddsimoes/sweet/layout/SweetMeasurable$DefaultImpls {
+	public static fun getAlignmentSize (Lio/github/ddsimoes/sweet/layout/SweetMeasurable;)Lio/github/ddsimoes/sweet/layout/Size;
+	public static fun place (Lio/github/ddsimoes/sweet/layout/SweetMeasurable;II)V
+}
+
+public final class io/github/ddsimoes/sweet/layout/delegate/BoxDelegate : io/github/ddsimoes/sweet/layout/delegate/LayoutDelegate {
+	public static final field $stable I
+	public static final field INSTANCE Lio/github/ddsimoes/sweet/layout/delegate/BoxDelegate;
+	public fun measure (Ljava/util/List;Lio/github/ddsimoes/sweet/layout/Constraints;Lio/github/ddsimoes/sweet/layout/LayoutSpec;)Lio/github/ddsimoes/sweet/layout/delegate/MeasureBundle;
+	public fun place (Ljava/util/List;IILio/github/ddsimoes/sweet/layout/LayoutSpec;Lio/github/ddsimoes/sweet/layout/delegate/MeasureBundle;)V
+}
+
+public final class io/github/ddsimoes/sweet/layout/delegate/ChildPlacement {
+	public static final field $stable I
+	public fun <init> (IILio/github/ddsimoes/sweet/layout/Size;II)V
+	public synthetic fun <init> (IILio/github/ddsimoes/sweet/layout/Size;IIILkotlin/jvm/internal/DefaultConstructorMarker;)V
+	public final fun component1 ()I
+	public final fun component2 ()I
+	public final fun component3 ()Lio/github/ddsimoes/sweet/layout/Size;
+	public final fun component4 ()I
+	public final fun component5 ()I
+	public final fun copy (IILio/github/ddsimoes/sweet/layout/Size;II)Lio/github/ddsimoes/sweet/layout/delegate/ChildPlacement;
+	public static synthetic fun copy$default (Lio/github/ddsimoes/sweet/layout/delegate/ChildPlacement;IILio/github/ddsimoes/sweet/layout/Size;IIILjava/lang/Object;)Lio/github/ddsimoes/sweet/layout/delegate/ChildPlacement;
+	public fun equals (Ljava/lang/Object;)Z
+	public final fun getContentOffsetX ()I
+	public final fun getContentOffsetY ()I
+	public final fun getSize ()Lio/github/ddsimoes/sweet/layout/Size;
+	public final fun getX ()I
+	public final fun getY ()I
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public final class io/github/ddsimoes/sweet/layout/delegate/ColumnDelegate : io/github/ddsimoes/sweet/layout/delegate/LayoutDelegate {
+	public static final field $stable I
+	public static final field INSTANCE Lio/github/ddsimoes/sweet/layout/delegate/ColumnDelegate;
+	public fun measure (Ljava/util/List;Lio/github/ddsimoes/sweet/layout/Constraints;Lio/github/ddsimoes/sweet/layout/LayoutSpec;)Lio/github/ddsimoes/sweet/layout/delegate/MeasureBundle;
+	public fun place (Ljava/util/List;IILio/github/ddsimoes/sweet/layout/LayoutSpec;Lio/github/ddsimoes/sweet/layout/delegate/MeasureBundle;)V
+}
+
+public abstract interface class io/github/ddsimoes/sweet/layout/delegate/LayoutDelegate {
+	public abstract fun measure (Ljava/util/List;Lio/github/ddsimoes/sweet/layout/Constraints;Lio/github/ddsimoes/sweet/layout/LayoutSpec;)Lio/github/ddsimoes/sweet/layout/delegate/MeasureBundle;
+	public abstract fun place (Ljava/util/List;IILio/github/ddsimoes/sweet/layout/LayoutSpec;Lio/github/ddsimoes/sweet/layout/delegate/MeasureBundle;)V
+}
+
+public final class io/github/ddsimoes/sweet/layout/delegate/LayoutDelegateRegistry {
+	public static final field $stable I
+	public static final field INSTANCE Lio/github/ddsimoes/sweet/layout/delegate/LayoutDelegateRegistry;
+	public final fun forSpec (Lio/github/ddsimoes/sweet/layout/LayoutSpec;)Lio/github/ddsimoes/sweet/layout/delegate/LayoutDelegate;
+}
+
+public final class io/github/ddsimoes/sweet/layout/delegate/MeasureBundle {
+	public static final field $stable I
+	public fun <init> (Ljava/util/List;Lio/github/ddsimoes/sweet/layout/Size;Ljava/util/List;Ljava/lang/Object;)V
+	public synthetic fun <init> (Ljava/util/List;Lio/github/ddsimoes/sweet/layout/Size;Ljava/util/List;Ljava/lang/Object;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+	public final fun component1 ()Ljava/util/List;
+	public final fun component2 ()Lio/github/ddsimoes/sweet/layout/Size;
+	public final fun component3 ()Ljava/util/List;
+	public final fun component4 ()Ljava/lang/Object;
+	public final fun copy (Ljava/util/List;Lio/github/ddsimoes/sweet/layout/Size;Ljava/util/List;Ljava/lang/Object;)Lio/github/ddsimoes/sweet/layout/delegate/MeasureBundle;
+	public static synthetic fun copy$default (Lio/github/ddsimoes/sweet/layout/delegate/MeasureBundle;Ljava/util/List;Lio/github/ddsimoes/sweet/layout/Size;Ljava/util/List;Ljava/lang/Object;ILjava/lang/Object;)Lio/github/ddsimoes/sweet/layout/delegate/MeasureBundle;
+	public fun equals (Ljava/lang/Object;)Z
+	public final fun getAux ()Ljava/lang/Object;
+	public final fun getChildSizes ()Ljava/util/List;
+	public final fun getParentSize ()Lio/github/ddsimoes/sweet/layout/Size;
+	public final fun getPlacements ()Ljava/util/List;
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public final class io/github/ddsimoes/sweet/layout/delegate/RowDelegate : io/github/ddsimoes/sweet/layout/delegate/LayoutDelegate {
+	public static final field $stable I
+	public static final field INSTANCE Lio/github/ddsimoes/sweet/layout/delegate/RowDelegate;
+	public fun measure (Ljava/util/List;Lio/github/ddsimoes/sweet/layout/Constraints;Lio/github/ddsimoes/sweet/layout/LayoutSpec;)Lio/github/ddsimoes/sweet/layout/delegate/MeasureBundle;
+	public fun place (Ljava/util/List;IILio/github/ddsimoes/sweet/layout/LayoutSpec;Lio/github/ddsimoes/sweet/layout/delegate/MeasureBundle;)V
+}
+
+public final class io/github/ddsimoes/sweet/widgets/ScrollViewport : org/eclipse/swt/widgets/Composite {
+	public static final field $stable I
+	public static final field DEFAULT_LINE_INCREMENT I
+	public fun <init> (Lorg/eclipse/swt/widgets/Composite;I)V
+	public final fun getContent ()Lorg/eclipse/swt/widgets/Control;
+	public final fun getContentExtent ()Lorg/eclipse/swt/graphics/Point;
+	public final fun getLineIncrement ()I
+	public final fun getMaxScrollX ()I
+	public final fun getMaxScrollY ()I
+	public final fun getOnScrollChanged ()Lkotlin/jvm/functions/Function6;
+	public final fun getOnScrollDragChanged ()Lkotlin/jvm/functions/Function1;
+	public final fun getOrigin ()Lorg/eclipse/swt/graphics/Point;
+	public final fun getScrollX ()I
+	public final fun getScrollY ()I
+	public final fun isLayingOut ()Z
+	public final fun scrollTo (II)V
+	public final fun setContent (Lorg/eclipse/swt/widgets/Control;)V
+	public fun setLayout (Lorg/eclipse/swt/widgets/Layout;)V
+	public final fun setLineIncrement (I)V
+	public final fun setOnScrollChanged (Lkotlin/jvm/functions/Function6;)V
+	public final fun setOnScrollDragChanged (Lkotlin/jvm/functions/Function1;)V
+	public final fun setOrigin (II)V
+	public final fun setOrigin (Lorg/eclipse/swt/graphics/Point;)V
+}
+

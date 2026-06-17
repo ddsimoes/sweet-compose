@@ -8,7 +8,7 @@ import org.eclipse.swt.widgets.Display
 import org.eclipse.swt.widgets.Widget
 
 fun Display.coroutineScope(): CoroutineScope {
-    return CoroutineScope(SupervisorJob() + Dispatchers.Main.immediate)
+    return CoroutineScope(SupervisorJob() + Dispatchers.Main)
 }
 
 fun Widget.coroutineScope(): CoroutineScope {

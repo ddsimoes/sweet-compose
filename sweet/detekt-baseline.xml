@@ -1,0 +1,376 @@
+<?xml version="1.0" ?>
+<SmellBaseline>
+  <ManuallySuppressedIssues></ManuallySuppressedIssues>
+  <CurrentIssues>
+    <ID>CognitiveComplexMethod:ArcSpline.kt$ArcSpline$fun getPos( time: Float, v: FloatArray, )</ID>
+    <ID>CognitiveComplexMethod:FrameClock.kt$SWTMonotonicFrameClock$fun start(scope: CoroutineScope)</ID>
+    <ID>CognitiveComplexMethod:Icon.kt$private fun parseSvgPathData( data: String, scaleX: Float, scaleY: Float, ): Path</ID>
+    <ID>CognitiveComplexMethod:LayoutDelegates.kt$ColumnDelegate$override fun measure( children: List&lt;SweetMeasurable&gt;, constraints: Constraints, spec: LayoutSpec, ): MeasureBundle</ID>
+    <ID>CognitiveComplexMethod:LayoutDelegates.kt$RowDelegate$override fun measure( children: List&lt;SweetMeasurable&gt;, constraints: Constraints, spec: LayoutSpec, ): MeasureBundle</ID>
+    <ID>CognitiveComplexMethod:MenuSystem.kt$private fun createSWTMenuItem( parent: org.eclipse.swt.widgets.Menu, itemData: androidx.compose.ui.window.MenuItemData, prefix: String, )</ID>
+    <ID>CognitiveComplexMethod:ModifierReconciler.kt$fun applySWTModifier( control: Control, modifier: Modifier, )</ID>
+    <ID>CognitiveComplexMethod:ModifierReconciler.kt$private fun reconcileDraw( control: Control, callbacks: List&lt;DrawScope.() -&gt; Unit&gt;, )</ID>
+    <ID>CognitiveComplexMethod:MonoSpline.kt$MonoSpline$fun getPos( time: Float, v: AnimationVector, index: Int = 0, )</ID>
+    <ID>CognitiveComplexMethod:NodeSystem.kt$SWTNodeApplier$override fun insertBottomUp( index: Int, instance: SweetNode, )</ID>
+    <ID>CognitiveComplexMethod:NodeSystem.kt$SWTNodeApplier$override fun remove( index: Int, count: Int, )</ID>
+    <ID>CognitiveComplexMethod:RegionTessellation.kt$internal fun tessellatePath( region: Region, path: Path, curveSegments: Int = 12, )</ID>
+    <ID>CognitiveComplexMethod:ScrollContainer.kt$@Composable internal fun ScrollContainer( verticalConfig: VerticalScrollConfig?, horizontalConfig: HorizontalScrollConfig?, strippedModifier: Modifier, debugLabel: String, content: @Composable () -&gt; Unit, )</ID>
+    <ID>CognitiveComplexMethod:TextField.kt$@Composable fun TextField( value: String, onValueChange: (String) -&gt; Unit, modifier: Modifier = Modifier, enabled: Boolean = true, readOnly: Boolean = false, label: @Composable (() -&gt; Unit)? = null, placeholder: @Composable (() -&gt; Unit)? = null, leadingIcon: @Composable (() -&gt; Unit)? = null, trailingIcon: @Composable (() -&gt; Unit)? = null, isError: Boolean = false, singleLine: Boolean = false, maxLines: Int = Int.MAX_VALUE, minLines: Int = 1, )</ID>
+    <ID>ComplexCondition:Icon.kt$(data[j] == '+' || data[j] == '-') &amp;&amp; j &gt; i &amp;&amp; data[j - 1] != 'e' &amp;&amp; data[j - 1] != 'E'</ID>
+    <ID>ComplexCondition:Icon.kt$i &lt; data.length &amp;&amp; (data[i] == ' ' || data[i] == ',' || data[i] == '\t' || data[i] == '\n' || data[i] == '\r')</ID>
+    <ID>ComplexCondition:Icon.kt$j &lt; data.length &amp;&amp; (data[j].isDigit() || data[j] == '.' || data[j] == 'e' || data[j] == 'E' || data[j] == '+' || data[j] == '-')</ID>
+    <ID>ComplexCondition:NodeSystem.kt$SWTNodeApplier$from &lt; 0 || to &lt; 0 || to &gt; children.size || from + count &gt; children.size || count &lt;= 0</ID>
+    <ID>ComplexCondition:NodeSystem.kt$SWTNodeApplier$from == to || (count == 1 &amp;&amp; to == size &amp;&amp; from == to - 1)</ID>
+    <ID>ComplexCondition:Rect.kt$Rect$isEmpty || other.isEmpty || left &gt;= other.right || other.left &gt;= right || top &gt;= other.bottom || other.top &gt;= bottom</ID>
+    <ID>ComplexCondition:ScrollViewport.kt$ScrollViewport.ViewportLayout$c is Composite &amp;&amp; (!boundsChanged || (oldBounds.width == contentW &amp;&amp; oldBounds.height == contentH))</ID>
+    <ID>ComplexCondition:SwtCanvasBackend.kt$SwtCanvasBackend$paint.blendMode == BlendMode.SrcOver || offscreenImage == null || w &lt;= 0 || h &lt;= 0</ID>
+    <ID>ComplexCondition:TextField.kt$SweetDebugger.assertionEnabled &amp;&amp; (label != null || placeholder != null || leadingIcon != null || trailingIcon != null || isError || maxLines != Int.MAX_VALUE || minLines != 1)</ID>
+    <ID>ComplexInterface:DrawScope.kt$DrawScope : Density</ID>
+    <ID>ComplexInterface:Path.kt$Path</ID>
+    <ID>ComplexInterface:SkiaCanvasBackendContract.kt$SkiaCanvasBackendContract</ID>
+    <ID>ComplexInterface:SweetCanvas.kt$SweetCanvas</ID>
+    <ID>CyclomaticComplexMethod:Icon.kt$private fun parseSvgPathData( data: String, scaleX: Float, scaleY: Float, ): Path</ID>
+    <ID>CyclomaticComplexMethod:LayoutDelegates.kt$ColumnDelegate$override fun measure( children: List&lt;SweetMeasurable&gt;, constraints: Constraints, spec: LayoutSpec, ): MeasureBundle</ID>
+    <ID>CyclomaticComplexMethod:LayoutDelegates.kt$RowDelegate$override fun measure( children: List&lt;SweetMeasurable&gt;, constraints: Constraints, spec: LayoutSpec, ): MeasureBundle</ID>
+    <ID>CyclomaticComplexMethod:LayoutDelegatesTest.kt$LayoutDelegatesTest$@Tag("flaky") @Test fun column_vertical_arrangements()</ID>
+    <ID>CyclomaticComplexMethod:LazyListState.kt$LazyListState$internal fun recomputeVisibleItems()</ID>
+    <ID>CyclomaticComplexMethod:MenuSystem.kt$private fun createSWTMenuItem( parent: org.eclipse.swt.widgets.Menu, itemData: androidx.compose.ui.window.MenuItemData, prefix: String, )</ID>
+    <ID>CyclomaticComplexMethod:ModifierReconciler.kt$fun applySWTModifier( control: Control, modifier: Modifier, )</ID>
+    <ID>CyclomaticComplexMethod:NodeSystem.kt$SWTNodeApplier$override fun insertBottomUp( index: Int, instance: SweetNode, )</ID>
+    <ID>CyclomaticComplexMethod:NodeSystem.kt$SWTNodeApplier$override fun remove( index: Int, count: Int, )</ID>
+    <ID>CyclomaticComplexMethod:RegionTessellation.kt$internal fun tessellatePath( region: Region, path: Path, curveSegments: Int = 12, )</ID>
+    <ID>CyclomaticComplexMethod:SwtCanvasBackend.kt$SwtCanvasBackend$private fun compositePixels( src: org.eclipse.swt.graphics.ImageData, dst: org.eclipse.swt.graphics.ImageData, w: Int, h: Int, mode: BlendMode, globalAlpha: Float, ): org.eclipse.swt.graphics.ImageData</ID>
+    <ID>CyclomaticComplexMethod:SwtDebugger.kt$SwtDebugger$private fun getControlSpecificInfo(control: Control): String</ID>
+    <ID>CyclomaticComplexMethod:TextField.kt$@Composable fun TextField( value: String, onValueChange: (String) -&gt; Unit, modifier: Modifier = Modifier, enabled: Boolean = true, readOnly: Boolean = false, label: @Composable (() -&gt; Unit)? = null, placeholder: @Composable (() -&gt; Unit)? = null, leadingIcon: @Composable (() -&gt; Unit)? = null, trailingIcon: @Composable (() -&gt; Unit)? = null, isError: Boolean = false, singleLine: Boolean = false, maxLines: Int = Int.MAX_VALUE, minLines: Int = 1, )</ID>
+    <ID>CyclomaticComplexMethod:window.kt$internal fun applyWindowStateToShell( shell: Shell, state: WindowState, density: Density, )</ID>
+    <ID>DestructuringDeclarationWithTooManyEntries:RecompositionTest.kt$RecompositionTest$val (chk1, chk2, chk1b, chk2b) = chkBoxes</ID>
+    <ID>EmptyFunctionBlock:ButtonVariantsTest.kt$ButtonVariantsTest${ }</ID>
+    <ID>EmptyFunctionBlock:IconSystemTest.kt$IconSystemTest${ }</ID>
+    <ID>EmptyFunctionBlock:LazyComponentTest.kt$LazyComponentTest${ }</ID>
+    <ID>EmptyFunctionBlock:MaterialThemeTest.kt$MaterialThemeTest${ }</ID>
+    <ID>EmptyFunctionBlock:ModifierExtensionsTest.kt$ModifierExtensionsTest${ }</ID>
+    <ID>EmptyFunctionBlock:StateManagementTest.kt$StateManagementTest${ }</ID>
+    <ID>EmptyFunctionBlock:TabClickTest.kt$TabClickTest${ }</ID>
+    <ID>EmptyFunctionBlock:TabInteractiveTest.kt$TabInteractiveTest${ }</ID>
+    <ID>EmptyFunctionBlock:TabSystemManualTest.kt$TabSystemManualTest${ }</ID>
+    <ID>EmptyFunctionBlock:TabSystemRealTest.kt$TabSystemRealTest${ }</ID>
+    <ID>EmptyFunctionBlock:TabSystemTest.kt$TabSystemTest${ }</ID>
+    <ID>EmptyFunctionBlock:TopAppBarTest.kt$TopAppBarTest${ }</ID>
+    <ID>ExplicitItLambdaParameter:Arrangement.kt$Arrangement${ i, it -&gt; outPosition[i] = cur cur += it }</ID>
+    <ID>ExplicitItLambdaParameter:Arrangement.kt$Arrangement${ i, it -&gt; outPosition[i] = cur.roundToInt() cur += it.toFloat() + gap }</ID>
+    <ID>ExplicitItLambdaParameter:Arrangement.kt$Arrangement${ i, it -&gt; outPosition[i] = cur.roundToInt() cur += it.toFloat() }</ID>
+    <ID>ExplicitItLambdaParameter:Arrangement.kt$Arrangement.SpacedAligned${ index, it -&gt; outPositions[index] = min(occupied, totalSize - it) lastSpace = min(spacePx, totalSize - outPositions[index] - it) occupied = outPositions[index] + it + lastSpace }</ID>
+    <ID>ForbiddenComment:ArcSpline.kt$ArcSpline$// TODO: Consider passing the index from the caller to improve performance</ID>
+    <ID>ForbiddenComment:FloatDecayAnimationSpec.kt$FloatExponentialDecaySpec$// TODO: Properly support nanos</ID>
+    <ID>ForbiddenComment:WindowDecoration.kt$ExperimentalComposeUiApi$* Sweet Compose window decoration API for SWT integration. * Maps to SWT shell styles and provides undecorated window support. * * TODO: Replace with proper ExperimentalComposeUiApi when available *</ID>
+    <ID>ForbiddenComment:WindowSystem.kt$// TODO: Add icon support when Painter integration is ready</ID>
+    <ID>FunctionNaming:AnimationVectors.kt$public fun AnimationVector( v1: Float, v2: Float, ): AnimationVector2D</ID>
+    <ID>FunctionNaming:AnimationVectors.kt$public fun AnimationVector( v1: Float, v2: Float, v3: Float, ): AnimationVector3D</ID>
+    <ID>FunctionNaming:AnimationVectors.kt$public fun AnimationVector( v1: Float, v2: Float, v3: Float, v4: Float, ): AnimationVector4D</ID>
+    <ID>FunctionNaming:AnimationVectors.kt$public fun AnimationVector(v1: Float): AnimationVector1D</ID>
+    <ID>FunctionNaming:BorderStroke.kt$@Stable fun BorderStroke( width: Dp, color: Color, )</ID>
+    <ID>FunctionNaming:ContentScale.kt$ContentScale.Companion$fun FillHeight(centerCrop: Boolean = false): ContentScale</ID>
+    <ID>FunctionNaming:ContentScale.kt$ContentScale.Companion$fun FillWidth(centerCrop: Boolean = false): ContentScale</ID>
+    <ID>FunctionNaming:SpringSimulation.kt$internal inline fun Motion( value: Float, velocity: Float, )</ID>
+    <ID>FunctionNaming:WindowPosition.kt$fun WindowPosition( x: Dp, y: Dp, )</ID>
+    <ID>FunctionNaming:WindowPosition.kt$fun WindowPosition(alignment: Alignment)</ID>
+    <ID>FunctionOnlyReturningConstant:MenuSystem.kt$private fun convertKeyShortcutToSWT(shortcut: KeyShortcut): Int</ID>
+    <ID>InvalidPackageDeclaration:InteropLayoutTest.kt$package io.github.ddsimoes.sweet.test</ID>
+    <ID>InvalidPackageDeclaration:LayoutModifierOrderTest.kt$package io.github.ddsimoes.sweet.test</ID>
+    <ID>InvalidPackageDeclaration:MeasurementFontExtension.kt$package io.github.ddsimoes.sweet.test</ID>
+    <ID>InvalidPackageDeclaration:SWTContainerTest.kt$package io.github.ddsimoes.sweet.test</ID>
+    <ID>InvalidPackageDeclaration:SWTWidgetTest.kt$package io.github.ddsimoes.sweet.test</ID>
+    <ID>InvalidPackageDeclaration:ShadowPassIntegrationTest.kt$package io.github.ddsimoes.sweet.test</ID>
+    <ID>InvalidPackageDeclaration:SweetTestCleanup.kt$package io.github.ddsimoes.sweet.test</ID>
+    <ID>LabeledExpression:CanvasIntegration.kt$@SnapshotStateObserver</ID>
+    <ID>LabeledExpression:CanvasTest.kt$CanvasTest$@test</ID>
+    <ID>LabeledExpression:EasingFunctions.kt$@Easing</ID>
+    <ID>LabeledExpression:FrameClock.kt$SWTMonotonicFrameClock$@launch</ID>
+    <ID>LabeledExpression:ImageLoading.kt$@LaunchedEffect</ID>
+    <ID>LabeledExpression:ImageLoading.kt$@suspendCancellableCoroutine</ID>
+    <ID>LabeledExpression:LayoutCoordinator.kt$LayoutCoordinator$@forEach</ID>
+    <ID>LabeledExpression:LayoutDelegates.kt$@forEachIndexed</ID>
+    <ID>LabeledExpression:ModifierExtensionsTest.kt$ModifierExtensionsTest$@test</ID>
+    <ID>LabeledExpression:SnapshotManager.kt$SWTSnapshotManager$@registerGlobalWriteObserver</ID>
+    <ID>LabeledExpression:SweetLayout.kt$SWTControlMeasurable$@withMeasurementFont</ID>
+    <ID>LabeledExpression:SwtCanvasBackend.kt$SwtCanvasBackend$@blendOrDirect</ID>
+    <ID>LabeledExpression:TextField.kt$@ModifyListener</ID>
+    <ID>LabeledExpression:TextField.kt$@SideEffect</ID>
+    <ID>LargeClass:SwtCanvasBackend.kt$SwtCanvasBackend : SweetCanvas</ID>
+    <ID>LongMethod:Icon.kt$private fun parseSvgPathData( data: String, scaleX: Float, scaleY: Float, ): Path</ID>
+    <ID>LongMethod:NodeSystem.kt$SWTNodeApplier$override fun insertBottomUp( index: Int, instance: SweetNode, )</ID>
+    <ID>LongMethod:RegionTessellation.kt$internal fun tessellatePath( region: Region, path: Path, curveSegments: Int = 12, )</ID>
+    <ID>LoopWithTooManyJumpStatements:Icon.kt$while</ID>
+    <ID>LoopWithTooManyJumpStatements:LazyListState.kt$LazyListState$for</ID>
+    <ID>LoopWithTooManyJumpStatements:NodeSystem.kt$SWTNodeApplier$while</ID>
+    <ID>MagicNumber:AlertDialog.kt$AlertDialogDefaults$6f</ID>
+    <ID>MagicNumber:AnimationVectors.kt$AnimationVector3D$3</ID>
+    <ID>MagicNumber:AnimationVectors.kt$AnimationVector4D$3</ID>
+    <ID>MagicNumber:AnimationVectors.kt$AnimationVector4D$4</ID>
+    <ID>MagicNumber:ArcSpline.kt$180.0</ID>
+    <ID>MagicNumber:ArcSpline.kt$91</ID>
+    <ID>MagicNumber:ArcSpline.kt$ArcSpline.Arc$90.0</ID>
+    <ID>MagicNumber:Color.kt$0.04045f</ID>
+    <ID>MagicNumber:Color.kt$0.055f</ID>
+    <ID>MagicNumber:Color.kt$1.055f</ID>
+    <ID>MagicNumber:Color.kt$12.92f</ID>
+    <ID>MagicNumber:Color.kt$2.4f</ID>
+    <ID>MagicNumber:Color.kt$Color$0.0722f</ID>
+    <ID>MagicNumber:Color.kt$Color$0.2126f</ID>
+    <ID>MagicNumber:Color.kt$Color$0.7152f</ID>
+    <ID>MagicNumber:Color.kt$Color$0xFF</ID>
+    <ID>MagicNumber:Color.kt$Color$16</ID>
+    <ID>MagicNumber:Color.kt$Color$24</ID>
+    <ID>MagicNumber:Color.kt$Color$255</ID>
+    <ID>MagicNumber:Color.kt$Color$255f</ID>
+    <ID>MagicNumber:Color.kt$Color$8</ID>
+    <ID>MagicNumber:ColorFilter.kt$ColorFilter.ColorMatrix$20</ID>
+    <ID>MagicNumber:ColorSystem.kt$0.75f</ID>
+    <ID>MagicNumber:ColorSystem.kt$16</ID>
+    <ID>MagicNumber:ColorSystem.kt$400</ID>
+    <ID>MagicNumber:ColorSystem.kt$600</ID>
+    <ID>MagicNumber:ColorSystem.kt$8</ID>
+    <ID>MagicNumber:Density.kt$Density.Companion$96f</ID>
+    <ID>MagicNumber:Easing.kt$0.2f</ID>
+    <ID>MagicNumber:Easing.kt$0.4f</ID>
+    <ID>MagicNumber:Easing.kt$CubicBezierEasing$5</ID>
+    <ID>MagicNumber:Easing.kt$CubicBezierEasing.Companion$1e-12</ID>
+    <ID>MagicNumber:Easing.kt$CubicBezierEasing.Companion$1e-7</ID>
+    <ID>MagicNumber:Easing.kt$CubicBezierEasing.Companion$27.0</ID>
+    <ID>MagicNumber:Easing.kt$CubicBezierEasing.Companion$3.0</ID>
+    <ID>MagicNumber:Easing.kt$CubicBezierEasing.Companion$3.0f</ID>
+    <ID>MagicNumber:Easing.kt$CubicBezierEasing.Companion$4.0</ID>
+    <ID>MagicNumber:Easing.kt$CubicBezierEasing.Companion$54.0</ID>
+    <ID>MagicNumber:Easing.kt$CubicBezierEasing.Companion$9.0</ID>
+    <ID>MagicNumber:EasingFunctions.kt$0.11f</ID>
+    <ID>MagicNumber:EasingFunctions.kt$0.12f</ID>
+    <ID>MagicNumber:EasingFunctions.kt$0.13f</ID>
+    <ID>MagicNumber:EasingFunctions.kt$0.15f</ID>
+    <ID>MagicNumber:EasingFunctions.kt$0.16f</ID>
+    <ID>MagicNumber:EasingFunctions.kt$0.17f</ID>
+    <ID>MagicNumber:EasingFunctions.kt$0.1f</ID>
+    <ID>MagicNumber:EasingFunctions.kt$0.22f</ID>
+    <ID>MagicNumber:EasingFunctions.kt$0.24f</ID>
+    <ID>MagicNumber:EasingFunctions.kt$0.25f</ID>
+    <ID>MagicNumber:EasingFunctions.kt$0.32f</ID>
+    <ID>MagicNumber:EasingFunctions.kt$0.33f</ID>
+    <ID>MagicNumber:EasingFunctions.kt$0.34f</ID>
+    <ID>MagicNumber:EasingFunctions.kt$0.35f</ID>
+    <ID>MagicNumber:EasingFunctions.kt$0.36f</ID>
+    <ID>MagicNumber:EasingFunctions.kt$0.37f</ID>
+    <ID>MagicNumber:EasingFunctions.kt$0.39f</ID>
+    <ID>MagicNumber:EasingFunctions.kt$0.3f</ID>
+    <ID>MagicNumber:EasingFunctions.kt$0.42f</ID>
+    <ID>MagicNumber:EasingFunctions.kt$0.45f</ID>
+    <ID>MagicNumber:EasingFunctions.kt$0.5</ID>
+    <ID>MagicNumber:EasingFunctions.kt$0.55f</ID>
+    <ID>MagicNumber:EasingFunctions.kt$0.56f</ID>
+    <ID>MagicNumber:EasingFunctions.kt$0.58f</ID>
+    <ID>MagicNumber:EasingFunctions.kt$0.5f</ID>
+    <ID>MagicNumber:EasingFunctions.kt$0.61f</ID>
+    <ID>MagicNumber:EasingFunctions.kt$0.63f</ID>
+    <ID>MagicNumber:EasingFunctions.kt$0.64f</ID>
+    <ID>MagicNumber:EasingFunctions.kt$0.65f</ID>
+    <ID>MagicNumber:EasingFunctions.kt$0.66f</ID>
+    <ID>MagicNumber:EasingFunctions.kt$0.67f</ID>
+    <ID>MagicNumber:EasingFunctions.kt$0.68f</ID>
+    <ID>MagicNumber:EasingFunctions.kt$0.6f</ID>
+    <ID>MagicNumber:EasingFunctions.kt$0.75f</ID>
+    <ID>MagicNumber:EasingFunctions.kt$0.76f</ID>
+    <ID>MagicNumber:EasingFunctions.kt$0.78f</ID>
+    <ID>MagicNumber:EasingFunctions.kt$0.7f</ID>
+    <ID>MagicNumber:EasingFunctions.kt$0.83f</ID>
+    <ID>MagicNumber:EasingFunctions.kt$0.84f</ID>
+    <ID>MagicNumber:EasingFunctions.kt$0.85f</ID>
+    <ID>MagicNumber:EasingFunctions.kt$0.87f</ID>
+    <ID>MagicNumber:EasingFunctions.kt$0.88f</ID>
+    <ID>MagicNumber:EasingFunctions.kt$0.89f</ID>
+    <ID>MagicNumber:EasingFunctions.kt$0.9375f</ID>
+    <ID>MagicNumber:EasingFunctions.kt$0.984375f</ID>
+    <ID>MagicNumber:EasingFunctions.kt$1.56f</ID>
+    <ID>MagicNumber:EasingFunctions.kt$1.5f</ID>
+    <ID>MagicNumber:EasingFunctions.kt$1.6f</ID>
+    <ID>MagicNumber:EasingFunctions.kt$10.0f</ID>
+    <ID>MagicNumber:EasingFunctions.kt$10.75f</ID>
+    <ID>MagicNumber:EasingFunctions.kt$10f</ID>
+    <ID>MagicNumber:EasingFunctions.kt$11.125f</ID>
+    <ID>MagicNumber:EasingFunctions.kt$2.25f</ID>
+    <ID>MagicNumber:EasingFunctions.kt$2.5f</ID>
+    <ID>MagicNumber:EasingFunctions.kt$2.625f</ID>
+    <ID>MagicNumber:EasingFunctions.kt$2.75f</ID>
+    <ID>MagicNumber:EasingFunctions.kt$20.0f</ID>
+    <ID>MagicNumber:EasingFunctions.kt$20f</ID>
+    <ID>MagicNumber:EasingFunctions.kt$3f</ID>
+    <ID>MagicNumber:EasingFunctions.kt$4.5f</ID>
+    <ID>MagicNumber:EasingFunctions.kt$7.5625f</ID>
+    <ID>MagicNumber:FloatDecayAnimationSpec.kt$FloatExponentialDecaySpec$0.0000001f</ID>
+    <ID>MagicNumber:FloatDecayAnimationSpec.kt$FloatExponentialDecaySpec$0.0001f</ID>
+    <ID>MagicNumber:FloatDecayAnimationSpec.kt$FloatExponentialDecaySpec$1000</ID>
+    <ID>MagicNumber:FloatDecayAnimationSpec.kt$FloatExponentialDecaySpec$1000f</ID>
+    <ID>MagicNumber:FrameClock.kt$SWTMonotonicFrameClock$16L</ID>
+    <ID>MagicNumber:FrameClock.kt$SWTMonotonicFrameClock$1_000_000</ID>
+    <ID>MagicNumber:Icon.kt$0.5f</ID>
+    <ID>MagicNumber:Icon.kt$180f</ID>
+    <ID>MagicNumber:Icon.kt$3</ID>
+    <ID>MagicNumber:Icon.kt$4</ID>
+    <ID>MagicNumber:Icon.kt$5</ID>
+    <ID>MagicNumber:Icon.kt$6</ID>
+    <ID>MagicNumber:Icon.kt$7</ID>
+    <ID>MagicNumber:Icon.kt$90f</ID>
+    <ID>MagicNumber:Icons.kt$Icons.Default$24f</ID>
+    <ID>MagicNumber:InlineClassHelper.kt$0x7FFFFFFF</ID>
+    <ID>MagicNumber:InlineClassHelper.kt$0xFFFFFFFF</ID>
+    <ID>MagicNumber:InlineClassHelper.kt$32</ID>
+    <ID>MagicNumber:IntOffset.kt$0xFFFFFFFFL</ID>
+    <ID>MagicNumber:IntOffset.kt$32</ID>
+    <ID>MagicNumber:IntOffset.kt$IntOffset$32</ID>
+    <ID>MagicNumber:IntSize.kt$0xFFFFFFFFL</ID>
+    <ID>MagicNumber:IntSize.kt$32</ID>
+    <ID>MagicNumber:IntSize.kt$IntSize$32</ID>
+    <ID>MagicNumber:LayoutCoordinator.kt$LayoutCoordinator$16</ID>
+    <ID>MagicNumber:LayoutDelegates.kt$3</ID>
+    <ID>MagicNumber:LayoutDelegates.kt$4</ID>
+    <ID>MagicNumber:ModifierReconciler.kt$16</ID>
+    <ID>MagicNumber:MonoSpline.kt$3</ID>
+    <ID>MagicNumber:MonoSpline.kt$6</ID>
+    <ID>MagicNumber:MonoSpline.kt$MonoSpline$0.5f</ID>
+    <ID>MagicNumber:MonoSpline.kt$MonoSpline$3.0f</ID>
+    <ID>MagicNumber:MonoSpline.kt$MonoSpline$9.0</ID>
+    <ID>MagicNumber:NodeSystem.kt$SWTContainerNode$16</ID>
+    <ID>MagicNumber:NodeSystem.kt$SWTNodeApplier$16</ID>
+    <ID>MagicNumber:PathBuilder.kt$PathBuilder$1e-6f</ID>
+    <ID>MagicNumber:PathBuilder.kt$PathBuilder$3.0f</ID>
+    <ID>MagicNumber:PathBuilder.kt$PathBuilder$4.0f</ID>
+    <ID>MagicNumber:ProgressIndicator.kt$0xFF6750A4</ID>
+    <ID>MagicNumber:ProgressIndicator.kt$0xFFE7E0EC</ID>
+    <ID>MagicNumber:ProgressIndicator.kt$100</ID>
+    <ID>MagicNumber:RegionTessellation.kt$0.5f</ID>
+    <ID>MagicNumber:RegionTessellation.kt$180f</ID>
+    <ID>MagicNumber:RegionTessellation.kt$270f</ID>
+    <ID>MagicNumber:RegionTessellation.kt$3</ID>
+    <ID>MagicNumber:RegionTessellation.kt$360f</ID>
+    <ID>MagicNumber:RegionTessellation.kt$4</ID>
+    <ID>MagicNumber:RegionTessellation.kt$90f</ID>
+    <ID>MagicNumber:ScrollableNode.kt$SWTScrollableNode$16</ID>
+    <ID>MagicNumber:Slider.kt$100</ID>
+    <ID>MagicNumber:SpringEstimation.kt$0.0001</ID>
+    <ID>MagicNumber:SpringEstimation.kt$0.001</ID>
+    <ID>MagicNumber:SpringEstimation.kt$0.5</ID>
+    <ID>MagicNumber:SpringEstimation.kt$100</ID>
+    <ID>MagicNumber:SpringEstimation.kt$1000.0</ID>
+    <ID>MagicNumber:SpringEstimation.kt$4.0</ID>
+    <ID>MagicNumber:SpringEstimation.kt$5</ID>
+    <ID>MagicNumber:SpringSimulation.kt$SpringSimulation$1000.0</ID>
+    <ID>MagicNumber:SweetImageBitmap.kt$ImageDataImageBitmap$16</ID>
+    <ID>MagicNumber:SweetImageBitmap.kt$ImageDataImageBitmap$8</ID>
+    <ID>MagicNumber:SweetImageBitmap.kt$SwtImageBitmap$16</ID>
+    <ID>MagicNumber:SweetImageBitmap.kt$SwtImageBitmap$8</ID>
+    <ID>MagicNumber:SweetImageBitmap.kt$SwtImageBitmap.Companion$0x7E0</ID>
+    <ID>MagicNumber:SweetImageBitmap.kt$SwtImageBitmap.Companion$0xF800</ID>
+    <ID>MagicNumber:SweetImageBitmap.kt$SwtImageBitmap.Companion$0xFF</ID>
+    <ID>MagicNumber:SweetImageBitmap.kt$SwtImageBitmap.Companion$0xFF00</ID>
+    <ID>MagicNumber:SweetImageBitmap.kt$SwtImageBitmap.Companion$16</ID>
+    <ID>MagicNumber:SweetImageBitmap.kt$SwtImageBitmap.Companion$256</ID>
+    <ID>MagicNumber:SweetImageBitmap.kt$SwtImageBitmap.Companion$32</ID>
+    <ID>MagicNumber:SweetImageBitmap.kt$SwtImageBitmap.Companion$8</ID>
+    <ID>MagicNumber:SweetLayout.kt$SWTControlMeasurable$16</ID>
+    <ID>MagicNumber:SweetLayout.kt$SweetLayout$16</ID>
+    <ID>MagicNumber:SweetLayoutNode.kt$SweetLayoutNode$16</ID>
+    <ID>MagicNumber:SwtCanvasBackend.kt$SwtCanvasBackend$0.0001f</ID>
+    <ID>MagicNumber:SwtCanvasBackend.kt$SwtCanvasBackend$0.5f</ID>
+    <ID>MagicNumber:SwtCanvasBackend.kt$SwtCanvasBackend$0xFF</ID>
+    <ID>MagicNumber:SwtCanvasBackend.kt$SwtCanvasBackend$16</ID>
+    <ID>MagicNumber:SwtCanvasBackend.kt$SwtCanvasBackend$180f</ID>
+    <ID>MagicNumber:SwtCanvasBackend.kt$SwtCanvasBackend$255</ID>
+    <ID>MagicNumber:SwtCanvasBackend.kt$SwtCanvasBackend$255.0f</ID>
+    <ID>MagicNumber:SwtCanvasBackend.kt$SwtCanvasBackend$255f</ID>
+    <ID>MagicNumber:SwtCanvasBackend.kt$SwtCanvasBackend$270f</ID>
+    <ID>MagicNumber:SwtCanvasBackend.kt$SwtCanvasBackend$3</ID>
+    <ID>MagicNumber:SwtCanvasBackend.kt$SwtCanvasBackend$360f</ID>
+    <ID>MagicNumber:SwtCanvasBackend.kt$SwtCanvasBackend$4</ID>
+    <ID>MagicNumber:SwtCanvasBackend.kt$SwtCanvasBackend$5</ID>
+    <ID>MagicNumber:SwtCanvasBackend.kt$SwtCanvasBackend$6</ID>
+    <ID>MagicNumber:SwtCanvasBackend.kt$SwtCanvasBackend$8</ID>
+    <ID>MagicNumber:SwtCanvasBackend.kt$SwtCanvasBackend$90f</ID>
+    <ID>MagicNumber:SwtDebugger.kt$SwtDebugger$16</ID>
+    <ID>MagicNumber:SwtDebugger.kt$SwtDebugger$20</ID>
+    <ID>MagicNumber:WidgetFactories.kt$&lt;no name provided&gt;$16</ID>
+    <ID>MagicNumber:WidgetFactories.kt$&lt;no name provided&gt;$20</ID>
+    <ID>MagicNumber:WidgetFactories.kt$&lt;no name provided&gt;$24</ID>
+    <ID>MagicNumber:WidgetFactories.kt$&lt;no name provided&gt;$36</ID>
+    <ID>MaxLineLength:Brush.kt$)</ID>
+    <ID>MaxLineLength:Button.kt$SweetDebugger.log("FilledTonalButton", "FilledTonalButton currently renders as a plain Button; tonal fill color is not yet implemented")</ID>
+    <ID>MaxLineLength:Button.kt$SweetDebugger.log("FloatingActionButton", "FloatingActionButton currently renders as a plain Button; FAB styling is not yet implemented")</ID>
+    <ID>MaxLineLength:Column.kt$ColumnScopeInstance$override</ID>
+    <ID>MaxLineLength:Icon.kt$while</ID>
+    <ID>MaxLineLength:Icons.kt$Icons.Default$pathData = "M12 8c1.1 0 2-0.9 2-2s-0.9-2-2-2-2 0.9-2 2 0.9 2 2 2zm0 2c-1.1 0-2 0.9-2 2s0.9 2 2 2 2-0.9 2-2-0.9-2-2-2zm0 6c-1.1 0-2 0.9-2 2s0.9 2 2 2 2-0.9 2-2-0.9-2-2-2z"</ID>
+    <ID>MaxLineLength:Icons.kt$Icons.Default$pathData = "M15.5 14h-0.79l-0.28-0.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-0.59 4.23-1.57l0.27 0.28v0.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"</ID>
+    <ID>MaxLineLength:Icons.kt$Icons.Default$pathData = "M17.65 6.35C16.2 4.9 14.21 4 12 4c-4.42 0-7.99 3.58-7.99 8s3.57 8 7.99 8c3.73 0 6.84-2.55 7.73-6h-2.08c-0.82 2.33-3.04 4-5.65 4-3.31 0-6-2.69-6-6s2.69-6 6-6c1.66 0 3.14 0.69 4.22 1.78L13 11h7V4l-2.35 2.35z"</ID>
+    <ID>MaxLineLength:Icons.kt$Icons.Default$pathData = "M19.14,12.94c0.04-0.3,0.06-0.61,0.06-0.94c0-0.32-0.02-0.64-0.07-0.94l2.03-1.58c0.18-0.14,0.23-0.41,0.12-0.61 l-1.92-3.32c-0.12-0.22-0.37-0.29-0.59-0.22l-2.39,0.96c-0.5-0.38-1.03-0.7-1.62-0.94L14.4,2.81c-0.04-0.24-0.24-0.41-0.48-0.41 h-3.84c-0.24,0-0.43,0.17-0.47,0.41L9.25,5.35C8.66,5.59,8.12,5.92,7.63,6.29L5.24,5.33c-0.22-0.08-0.47,0-0.59,0.22L2.74,8.87 C2.62,9.08,2.66,9.34,2.86,9.48l2.03,1.58C4.84,11.36,4.8,11.69,4.8,12s0.02,0.64,0.07,0.94l-2.03,1.58 c-0.18,0.14-0.23,0.41-0.12,0.61l1.92,3.32c0.12,0.22,0.37,0.29,0.59,0.22l2.39-0.96c0.5,0.38,1.03,0.7,1.62,0.94l0.36,2.54 c0.05,0.24,0.24,0.41,0.48,0.41h3.84c0.24,0,0.44-0.17,0.47-0.41l0.36-2.54c0.59-0.24,1.13-0.56,1.62-0.94l2.39,0.96 c0.22,0.08,0.47,0,0.59-0.22l1.92-3.32c0.12-0.22,0.07-0.47-0.12-0.61L19.14,12.94z M12,15.6c-1.98,0-3.6-1.62-3.6-3.6 s1.62-3.6,3.6-3.6s3.6,1.62,3.6,3.6S13.98,15.6,12,15.6z"</ID>
+    <ID>MaxLineLength:Icons.kt$Icons.Default$pathData = "M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c0.39-0.39 0.39-1.02 0-1.41l-2.34-2.34c-0.39-0.39-1.02-0.39-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"</ID>
+    <ID>MaxLineLength:LayoutDelegates.kt$&lt;no name provided&gt;$override fun get(alignmentLine: AlignmentLine): Int</ID>
+    <ID>MaxLineLength:LayoutDelegates.kt$BoxDelegate$val offset = alignment.align(IntSize(size.width, size.height), IntSize(parentSize.width, parentSize.height), LayoutDirection.Ltr)</ID>
+    <ID>MaxLineLength:LayoutDelegates.kt$ColumnDelegate$val remaining = (constraints.maxHeight - fixedHeight - spacingFor(arrangement, children.size, density) - fixedPaddingGap).coerceAtLeast(0)</ID>
+    <ID>MaxLineLength:LayoutDelegates.kt$RowDelegate$val remaining = (constraints.maxWidth - fixedWidth - spacingFor(arrangement, children.size, density) - fixedPaddingGap).coerceAtLeast(0)</ID>
+    <ID>MaxLineLength:ModifierCompositionTest.kt$ModifierCompositionTest$SweetDebugger.log("ModifierComposition", "Normal: (${normalBounds.x}, ${normalBounds.y}), Negative offset: (${negativeBounds.x}, ${negativeBounds.y})")</ID>
+    <ID>MaxLineLength:ModifierCompositionTest.kt$ModifierCompositionTest$assertTrue(fillHeight &gt; 0 &amp;&amp; fillHeight &lt;= maxExpected, "Fill height should respect parent constraint (fillHeight=$fillHeight, max=$maxExpected)")</ID>
+    <ID>MaxLineLength:ModifierCompositionTest.kt$ModifierCompositionTest$assertTrue(fillWidth &gt; 0 &amp;&amp; fillWidth &lt;= maxExpected, "Fill width should respect parent constraint (fillWidth=$fillWidth, max=$maxExpected)")</ID>
+    <ID>MaxLineLength:ModifierExtensionsTest.kt$ModifierExtensionsTest$assertTrue(bounds.x &gt;= expectedX, "Second box X should be offset by at least $expectedX (10dp at density=$density), was ${bounds.x}")</ID>
+    <ID>MaxLineLength:ModifierExtensionsTest.kt$ModifierExtensionsTest$assertTrue(bounds.y &gt;= expectedY, "Second box Y should be offset by at least $expectedY (5dp at density=$density), was ${bounds.y}")</ID>
+    <ID>MaxLineLength:NodeSystem.kt$SWTNodeApplier$"SWTNodeApplier.insertBottomUp: Container materialization reduced children count from $childrenBefore to $childrenAfter, this should not happen"</ID>
+    <ID>MaxLineLength:NodeSystem.kt$SWTNodeApplier$"This indicates a bug in the removal logic where widgets are not being properly disposed or the array is not being updated correctly."</ID>
+    <ID>MaxLineLength:Row.kt$RowScopeInstance$override fun Modifier.alignBy(alignmentLineBlock: (Measured) -&gt; Int)</ID>
+    <ID>MaxLineLength:ScrollViewport.kt$ScrollViewport$bar.setValues(scrollX, 0, contentExtent.x.coerceAtLeast(1), client.width.coerceAtLeast(1), lineIncrement, client.width.coerceAtLeast(1))</ID>
+    <ID>MaxLineLength:ScrollViewport.kt$ScrollViewport$bar.setValues(scrollY, 0, contentExtent.y.coerceAtLeast(1), client.height.coerceAtLeast(1), lineIncrement, client.height.coerceAtLeast(1))</ID>
+    <ID>MaxLineLength:ScrollViewportProbeTest.kt$ScrollViewportProbeTest$r += "wheel notify fired=$wheelFired selBefore=$selBeforeWheel selAfter=${bar.selection} selectionFired=$selectionFired"</ID>
+    <ID>MaxLineLength:SweetDebugger.kt$SweetDebugger$"$indent${widget.javaClass.simpleName}(${widget.text}): bounds=${widget.bounds}, visible=${widget.visible}, ${if (widget.style and SWT.CHECK != 0) "CHECK" else ""}"</ID>
+    <ID>MaxLineLength:SweetDebugger.kt$SweetDebugger$log("WIDGET_TREE", "$indent${widget.javaClass.simpleName}: layout=${widget.layout}, children=${children.size}, bounds=${widget.bounds}, visible=${widget.visible}")</ID>
+    <ID>MaxLineLength:SweetLayout.kt$SweetLayout$"computeSize for scroll content: hints=($wHint,$hHint) constraints=$constraints result=$size children=${node.children.size}"</ID>
+    <ID>MaxLineLength:SweetLayout.kt$SweetLayout$"computeSize for scroll content: hints=($wHint,$hHint) constraints=$constraints result=${bundle.parentSize} children=${measurables.size}"</ID>
+    <ID>MaxLineLength:SweetLayout.kt$SweetLayout$io.github.ddsimoes.sweet.internal.layoutPass(node, io.github.ddsimoes.sweet.layout.Constraints.fixed(client.width, client.height))</ID>
+    <ID>MaxLineLength:SweetLayoutNode.kt$SweetLayoutNode$"SweetLayoutNode(ctrl=${control?.javaClass?.simpleName}[${control?.hashCode()?.toString(16)}], spec=$spec, children=${children.size})"</ID>
+    <ID>MaxLineLength:SwtDebugger.kt$SwtDebugger$"GridData(h=$ha v=$va grabH=${layoutData.grabExcessHorizontalSpace} grabV=${layoutData.grabExcessVerticalSpace} span=${layoutData.horizontalSpan}×${layoutData.verticalSpan})"</ID>
+    <ID>MaxLineLength:SwtDebugger.kt$SwtDebugger$is RowLayout -&gt; "RowLayout(type=${if (layout.type == org.eclipse.swt.SWT.HORIZONTAL) "HORIZONTAL" else "VERTICAL"}, wrap=${layout.wrap})"</ID>
+    <ID>MaxLineLength:TextField.kt$if</ID>
+    <ID>MaxLineLength:WindowDecoration.kt$WindowDecoration.Companion$fun</ID>
+    <ID>NestedBlockDepth:ArcSpline.kt$ArcSpline$fun getPos( time: Float, v: FloatArray, )</ID>
+    <ID>NestedBlockDepth:ArcSpline.kt$ArcSpline$fun getSlope( time: Float, v: FloatArray, )</ID>
+    <ID>NestedBlockDepth:Icon.kt$private fun parseSvgPathData( data: String, scaleX: Float, scaleY: Float, ): Path</ID>
+    <ID>NestedBlockDepth:NodeSystem.kt$SWTNodeApplier$override fun insertBottomUp( index: Int, instance: SweetNode, )</ID>
+    <ID>NestedBlockDepth:NodeSystem.kt$SWTNodeApplier$override fun onClear()</ID>
+    <ID>NestedBlockDepth:SwtCanvasBackend.kt$SwtCanvasBackend$private fun drawPointsBody( points: List&lt;Offset&gt;, pointMode: PointMode, paint: Paint, pointSize: Float, )</ID>
+    <ID>ReturnCount:Easing.kt$CubicBezierEasing.Companion$private fun findFirstCubicRootImpl( p0: Float, p1: Float, p2: Float, p3: Float, ): Float</ID>
+    <ID>ReturnCount:MonoSpline.kt$MonoSpline$fun getPos( t: Float, j: Int, ): Float</ID>
+    <ID>ReturnCount:SweetLayout.kt$SweetLayout$override fun layout( composite: Composite, flushCache: Boolean, )</ID>
+    <ID>SpreadOperator:SweetImageBitmap.kt$SwtImageBitmap.Companion$( *Array(256) { i -&gt; org.eclipse.swt.graphics.RGB(i, i, i) }, )</ID>
+    <ID>SpreadOperator:SwtCanvasBackend.kt$SwtCanvasBackend$( *intPoints.flatMap { listOf(it.first, it.second) }.toIntArray(), )</ID>
+    <ID>SwallowedException:SweetDebugger.kt$SweetDebugger$e: Exception</ID>
+    <ID>TooGenericExceptionCaught:Button.kt$&lt;no name provided&gt;$e: Exception</ID>
+    <ID>TooGenericExceptionCaught:Checkbox.kt$&lt;no name provided&gt;$e: Exception</ID>
+    <ID>TooGenericExceptionCaught:FrameClock.kt$SWTMonotonicFrameClock$e: Exception</ID>
+    <ID>TooGenericExceptionCaught:LayoutCoordinator.kt$LayoutCoordinator$e: Exception</ID>
+    <ID>TooGenericExceptionCaught:SnapshotManager.kt$SWTSnapshotManager$e: Exception</ID>
+    <ID>TooGenericExceptionCaught:SweetDebugger.kt$SweetDebugger$e: Exception</ID>
+    <ID>TooGenericExceptionCaught:Tab.kt$&lt;no name provided&gt;$e: Exception</ID>
+    <ID>TooGenericExceptionCaught:Utilities.kt$e: Exception</ID>
+    <ID>TooManyFunctions:DrawScope.kt$DrawScope : Density</ID>
+    <ID>TooManyFunctions:Path.kt$Path</ID>
+    <ID>TooManyFunctions:PathBuilder.kt$PathBuilder</ID>
+    <ID>TooManyFunctions:SkiaCanvasBackendContract.kt$SkiaCanvasBackendContract</ID>
+    <ID>TooManyFunctions:SweetCanvas.kt$SweetCanvas</ID>
+    <ID>UnusedPrivateProperty:ApplicationComposition.kt$ApplicationComposition$private val manager: ComposeManager</ID>
+    <ID>UnusedPrivateProperty:Dialog.kt$val result = box.open()</ID>
+    <ID>UnusedPrivateProperty:MenuSystem.kt$private const val MENU_ITEM_PATH_KEY = "sweet.menu.item.path"</ID>
+    <ID>UnusedPrivateProperty:ShimStatusTest.kt$ShimStatusTest$var clicked = false</ID>
+    <ID>UnusedPrivateProperty:SpringEstimation.kt$i</ID>
+    <ID>VariableNaming:RegionTessellation.kt$val bl_r = rr.bottomLeftCornerRadius.coerceAtLeast(0f)</ID>
+    <ID>VariableNaming:RegionTessellation.kt$val br_r = rr.bottomRightCornerRadius.coerceAtLeast(0f)</ID>
+    <ID>VariableNaming:RegionTessellation.kt$val tl_r = rr.topLeftCornerRadius.coerceAtLeast(0f)</ID>
+    <ID>VariableNaming:RegionTessellation.kt$val tr_r = rr.topRightCornerRadius.coerceAtLeast(0f)</ID>
+    <ID>VariableNaming:SwtCanvasBackend.kt$SwtCanvasBackend$val bl_r = rr.bottomLeftCornerRadius.coerceAtLeast(0f)</ID>
+    <ID>VariableNaming:SwtCanvasBackend.kt$SwtCanvasBackend$val br_r = rr.bottomRightCornerRadius.coerceAtLeast(0f)</ID>
+    <ID>VariableNaming:SwtCanvasBackend.kt$SwtCanvasBackend$val tl_r = rr.topLeftCornerRadius.coerceAtLeast(0f)</ID>
+    <ID>VariableNaming:SwtCanvasBackend.kt$SwtCanvasBackend$val tr_r = rr.topRightCornerRadius.coerceAtLeast(0f)</ID>
+    <ID>WildcardImport:Integration.kt$import androidx.compose.runtime.*</ID>
+  </CurrentIssues>
+</SmellBaseline>

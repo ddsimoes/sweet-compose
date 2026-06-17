@@ -1,0 +1,81 @@
+<?xml version="1.0" ?>
+<SmellBaseline>
+  <ManuallySuppressedIssues></ManuallySuppressedIssues>
+  <CurrentIssues>
+    <ID>EmptyFunctionBlock:CanvasSampleTest.kt$CanvasSampleTest${ }</ID>
+    <ID>EmptyFunctionBlock:DebugLayoutTest.kt$DebugLayoutTest${ }</ID>
+    <ID>EmptyFunctionBlock:SimpleLayoutTest.kt$SimpleLayoutTest${ }</ID>
+    <ID>LabeledExpression:AnimationDemo.kt$@LaunchedEffect</ID>
+    <ID>LabeledExpression:CanvasSample.kt$@Canvas</ID>
+    <ID>LabeledExpression:TodoMVCScrollTest.kt$TodoMVCScrollTest$@runOnSWT</ID>
+    <ID>LongParameterList:KitchenSink.kt$( textFieldValue: String, onTextChange: (String) -&gt; Unit, isChecked: Boolean, onCheckedChange: (Boolean) -&gt; Unit, isSwitchOn: Boolean, onSwitchChange: (Boolean) -&gt; Unit, sliderValue: Float, onSliderChange: (Float) -&gt; Unit, )</ID>
+    <ID>MagicNumber:AnimationDemo.kt$0.016f</ID>
+    <ID>MagicNumber:AnimationDemo.kt$0.25f</ID>
+    <ID>MagicNumber:AnimationDemo.kt$0.5f</ID>
+    <ID>MagicNumber:AnimationDemo.kt$0.75f</ID>
+    <ID>MagicNumber:AnimationDemo.kt$16</ID>
+    <ID>MagicNumber:AnimationDemo.kt$200</ID>
+    <ID>MagicNumber:CanvasSample.kt$20f</ID>
+    <ID>MagicNumber:CanvasSample.kt$3</ID>
+    <ID>MagicNumber:CanvasSample.kt$4</ID>
+    <ID>MagicNumber:CanvasSample.kt$40f</ID>
+    <ID>MagicNumber:CanvasSample.kt$5</ID>
+    <ID>MagicNumber:CanvasSample.kt$6</ID>
+    <ID>MagicNumber:CanvasSample.kt$7</ID>
+    <ID>MagicNumber:CanvasSample.kt$8f</ID>
+    <ID>MagicNumber:ImageSample.kt$0x47</ID>
+    <ID>MagicNumber:ImageSample.kt$0xA1</ID>
+    <ID>MagicNumber:ImageSample.kt$128</ID>
+    <ID>MagicNumber:ImageSample.kt$3f</ID>
+    <ID>MagicNumber:ImageSample.kt$96</ID>
+    <ID>MagicNumber:KitchenSink.kt$20</ID>
+    <ID>MagicNumber:KitchenSink.kt$3</ID>
+    <ID>MagicNumber:KitchenSink.kt$5</ID>
+    <ID>MagicNumber:KitchenSink.kt$50f</ID>
+    <ID>MagicNumber:KitchenSink2.kt$10</ID>
+    <ID>MagicNumber:KitchenSink2.kt$3</ID>
+    <ID>MagicNumber:KitchenSink2.kt$4</ID>
+    <ID>MagicNumber:KitchenSink2.kt$8</ID>
+    <ID>MagicNumber:KitchenSink3.kt$0.01f</ID>
+    <ID>MagicNumber:KitchenSink3.kt$0.6f</ID>
+    <ID>MagicNumber:KitchenSink3.kt$0xFF2196F3</ID>
+    <ID>MagicNumber:KitchenSink3.kt$0xFF4CAF50</ID>
+    <ID>MagicNumber:KitchenSink3.kt$0xFF607D8B</ID>
+    <ID>MagicNumber:KitchenSink3.kt$0xFFE91E63</ID>
+    <ID>MagicNumber:KitchenSink3.kt$0xFFF5F5F5</ID>
+    <ID>MagicNumber:KitchenSink3.kt$0xFFFF9800</ID>
+    <ID>MagicNumber:KitchenSink3.kt$1.01f</ID>
+    <ID>MagicNumber:KitchenSink3.kt$100</ID>
+    <ID>MagicNumber:KitchenSink3.kt$100f</ID>
+    <ID>MagicNumber:KitchenSink3.kt$130f</ID>
+    <ID>MagicNumber:KitchenSink3.kt$20</ID>
+    <ID>MagicNumber:KitchenSink3.kt$200f</ID>
+    <ID>MagicNumber:KitchenSink3.kt$20f</ID>
+    <ID>MagicNumber:KitchenSink3.kt$3</ID>
+    <ID>MagicNumber:KitchenSink3.kt$4</ID>
+    <ID>MagicNumber:KitchenSink3.kt$40f</ID>
+    <ID>MagicNumber:KitchenSink3.kt$5</ID>
+    <ID>MagicNumber:KitchenSink3.kt$50</ID>
+    <ID>MagicNumber:KitchenSink3.kt$50f</ID>
+    <ID>MagicNumber:KitchenSink3.kt$6</ID>
+    <ID>MagicNumber:KitchenSink3.kt$60f</ID>
+    <ID>MagicNumber:KitchenSink3.kt$7</ID>
+    <ID>MagicNumber:SWTDispatcherExample.kt$100</ID>
+    <ID>MagicNumber:SWTDispatcherExample.kt$1000</ID>
+    <ID>MagicNumber:SWTDispatcherExample.kt$2000</ID>
+    <ID>MagicNumber:TabDebugTest.kt$5</ID>
+    <ID>MagicNumber:todomvc.kt$100</ID>
+    <ID>MagicNumber:todomvc.kt$TodoState$3</ID>
+    <ID>MagicNumber:todomvc.kt$TodoState$4</ID>
+    <ID>MatchingDeclarationName:KitchenSink.kt$ListItem</ID>
+    <ID>MaxLineLength:DrawingKitchenSink.kt$Button(onClick = { spinning = !spinning }, Modifier.height(28.dp)) { Text(if (spinning) "Pause" else "Resume", fontSize = 9.sp) }</ID>
+    <ID>MaxLineLength:KitchenSink3.kt$drawLine(Color.Green, start = androidx.compose.ui.geometry.Offset(20f, 100f), end = androidx.compose.ui.geometry.Offset(200f, 100f), strokeWidth = 4f)</ID>
+    <ID>MaxLineLength:KitchenSinkTest.kt$KitchenSinkTest$assertTrue</ID>
+    <ID>MaxLineLength:SWTDispatcherExample.kt$text = "This example demonstrates proper SWT thread handling with coroutines.\nAll UI updates are dispatched correctly to the SWT UI thread."</ID>
+    <ID>MaxLineLength:SweetComposeCanvasTest.kt$SweetDebugger.log("TestCanvas", "Color.Red components: r=${Color.Red.red}, g=${Color.Red.green}, b=${Color.Red.blue}, a=${Color.Red.alpha}")</ID>
+    <ID>MayBeConst:KitchenSink3.kt$private val ProgressAnimMod = 1.01f</ID>
+    <ID>MayBeConst:KitchenSink3.kt$private val ProgressAnimStep = 0.01f</ID>
+    <ID>UnusedParameter:KitchenSink2.kt$selectedIndex: Int</ID>
+    <ID>UnusedPrivateMember:TodoMVCTest.kt$TodoMVCTest$private fun AutoSWT.checkLayout(composite: Composite)</ID>
+  </CurrentIssues>
+</SmellBaseline>
